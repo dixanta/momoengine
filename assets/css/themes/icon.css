@@ -70,3 +70,61 @@
 .icon-contact {
  background:url('icons/contact.png') no-repeat;
 }
+.icon-dashboard{
+	background:url('icons/dashboard.png') no-repeat;
+}
+
+.icon-system{
+	background:url('icons/system.png') no-repeat;
+}
+.icon-member{
+	background:url('icons/member.png') no-repeat;
+}
+.icon-category{
+	background:url('icons/category.png') no-repeat;
+}
+.icon-tools{
+	background:url('icons/tools.png') no-repeat;
+}
+.icon-page{
+	background:url('icons/page.png') no-repeat;
+}
+.icon-content{
+	background:url('icons/content.png') no-repeat;
+}
+.icon-advertise{
+	background:url('icons/advertise.png') no-repeat;
+}
+.icon-layout{
+	background:url('icons/layout.png') no-repeat;
+}
+.icon-banner{
+	background:url('icons/banner.png') no-repeat;
+}
+.icon-logout{
+	background:url('icons/logout.png') no-repeat;
+}
+.icon-shortcut{
+	background:url('icons/shortcut.png') no-repeat;
+}
+.icon-filemanager{
+	background:url('icons/filemanager.png') no-repeat;
+}
+.icon-module{
+	background:url('icons/module.png') no-repeat;
+}
+.icon-extension{
+	background:url('icons/extension.png') no-repeat;
+}
+.icon-accesscontrol{
+	background:url('icons/accesscontrol.png') no-repeat;
+}
+.icon-backup{
+	background:url('icons/backup.png') no-repeat;
+}
+.icon-fields{
+	background:url('icons/fields.png') no-repeat;
+}
+.icon-fieldsetting{
+	background:url('icons/fieldsetting.png') no-repeat;
+}

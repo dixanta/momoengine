@@ -1,6 +1,6 @@
     <div id="footer" region="south" border="false">
         <div id="copyright">
-            <a href="#">CMS</a> &copy; Copyright <?=date('Y')?> - <a href="#">Company Name</a> -  All rights Reserved
+            <a href="#">Powered By Momo Engine</a> &copy; Copyright <?=date('Y')?> - <a href="#">Company Name</a> -  All rights Reserved
         </div>
         
     </div>
