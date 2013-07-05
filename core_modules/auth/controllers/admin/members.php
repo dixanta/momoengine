@@ -54,7 +54,7 @@ class Members extends Admin_Controller
 		$data['members'] = $this->user_model->getUsers();
 
 		// Display Page
-		$data['header'] = $this->lang->line('backendpro_members');
+		$data['header'] = $this->lang->line('users');
 		$data['page'] = $this->config->item('template_admin') . "members/index";
 		$data['module'] = 'auth';
 		$this->load->view($this->_container,$data);

@@ -16,7 +16,7 @@
 </style>
 <h1><u>File Editor</u></h1>
 <p style="float:right;margin-right:90px">
-<a id="crop-image" class="easyui-linkbutton">Save Changes</a>
+<a id="save-changes" class="easyui-linkbutton">Save Changes</a>
 </p>  
 <div style="clear:both"></div>
 <div id="filetree"></div>
@@ -43,7 +43,7 @@ $(function() {
 		
     });
 
-	$('#crop-image').click(function(){
+	$('#save-changes').click(function(){
 		$.ajax({type:'post',url:'<?=site_url('tools/admin/feditor/save')?>',data:$('#file-form').serialize(),dataType:'json',
 				success:function(data){
 					if(data.success)

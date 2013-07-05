@@ -38,6 +38,21 @@ $lang['general_symbols'] = "Symbols";
 $lang['general_uppercase'] = "Uppercase";
 $lang['general_length'] = "Length";
 
+$lang['search'] = "Search";
+$lang['clear'] = "Clear";
+$lang['action'] = "Action";
+$lang['clear'] = "Clear";
+$lang['create'] = "Create";
+$lang['remove_selected'] = "Remove Selected";
+$lang['cancel'] = "Cancel";
+$lang['confirm']='Confirm';
+$lang['success']='Success';
+$lang['error']='Error';
+$lang['edit_selection_error']='Please select record to Edit';
+$lang['delete_confirm']='Are you sure to delete?';
+$lang['logout_confirm']='Are you sure to logout?';
+
+
 $lang['backendpro_control_panel'] = "Control Panel";
 $lang['backendpro_view_website'] = 'View Website';
 

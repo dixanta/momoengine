@@ -29,7 +29,6 @@
 </form>
 </div>
 <br/>
-<br/>
 <table id="email_template-table" pagination="true" title="<?=lang('email_template')?>" pagesize="20" rownumbers="true" toolbar="#toolbar" collapsible="true"
 			 fitColumns="true">
     <thead>
@@ -54,19 +53,18 @@
 </div> 
 
 <!--for create and edit email_template form-->
-<div id="dlg" class="easyui-window" style="width:auto;height:auto;padding:10px 20px"
-        closed="true" collapsible="true" buttons="#dlg-buttons">
+<div id="dlg"  class="easyui-dialog" style="width:500px;height:auto;padding:10px 20px" data-options="closed:true,collapsible:true,modal:true,buttons:'#dlg-buttons'">
     <form id="form-email_template" method="post" >
     <table>
 		<tr>
 		              <td width="34%" ><label><?=lang('name')?>:</label></td>
-					  <td width="66%"><input name="name" id="name" class="easyui-validatebox" required="true"></td>
+					  <td width="66%"><input name="name" id="name" class="easyui-validatebox" required="true" style="width:300px;"/></td>
 		       </tr><tr>
 		              <td width="34%" ><label><?=lang('slug_name')?>:</label></td>
-					  <td width="66%"><input name="slug_name" id="slug_name" class="easyui-validatebox" required="true"></td>
+					  <td width="66%"><input name="slug_name" id="slug_name" class="easyui-validatebox" required="true"  style="width:300px;"/></td>
 		       </tr><tr>
 		              <td width="34%" ><label><?=lang('subject')?>:</label></td>
-					  <td width="66%"><input name="subject" id="subject" class="easyui-validatebox" required="true"></td>
+					  <td width="66%"><input name="subject" id="subject" class="easyui-validatebox" required="true"  style="width:300px;"/></td>
 		       </tr><tr>
 		              <td width="34%" ><label><?=lang('body')?>:</label></td>
 					  <td width="66%"><textarea name="body" id="body" class="easyui-validatebox" required="true" style="width:300px;height:100px"></textarea></td>
@@ -75,8 +73,8 @@
     <input type="hidden" name="email_template_id"/>
     </form>
 	<div id="dlg-buttons">
-		<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()"><?= lang('save')?></a>
-		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').window('close')"><?= lang('cancel')?></a>
+		<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()"><?= lang('general_save')?></a>
+		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').window('close')"><?= lang('general_cancel')?></a>
 	</div>    
 </div>
 <!--div ends-->
@@ -85,6 +83,7 @@
 </div>
 <script language="javascript" type="text/javascript">
 	$(function(){
+		<?php tinymce('body')?>
 		$('#clear').click(function(){
 			$('#email_template-search-form').form('clear');
 			$('#email_template-table').datagrid({

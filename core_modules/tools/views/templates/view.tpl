@@ -40,8 +40,8 @@
     </table>
     </form>
 	<div id="dlg-buttons">
-		<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()">{PHP_START} echo  lang('save'){PHP_END}</a>
-		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').window('close')">{PHP_START} echo  lang('cancel'){PHP_END}</a>
+		<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()">{PHP_START} echo  lang('general_save'){PHP_END}</a>
+		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').window('close')">{PHP_START} echo  lang('general_cancel'){PHP_END}</a>
 	</div>    
 </div>
 <!--div ends-->

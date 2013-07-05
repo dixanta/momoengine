@@ -48,8 +48,8 @@
     </table>
     </form>
 	<div id="dlg-buttons">
-		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()"><?= lang('save')?></a>
-		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').window('close')"><?= lang('cancel')?></a>
+		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()"><?= lang('general_save')?></a>
+		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').window('close')"><?= lang('general_cancel')?></a>
 	</div>    
 </div>
 <!--div ends-->

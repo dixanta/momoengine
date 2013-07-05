@@ -73,8 +73,8 @@
                 </div>  <!-- to create tab format within the form-->      
     </form>
 	<div id="dlg-buttons">
-		<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()"><?= lang('save')?></a>
-		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').window('close')"><?= lang('cancel')?></a>
+		<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()"><?= lang('general_save')?></a>
+		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').window('close')"><?= lang('general_cancel')?></a>
 	</div>    
 </div>
 <!--div ends-->

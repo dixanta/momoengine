@@ -7,6 +7,7 @@ class Email_template extends Admin_Controller
     	parent::__construct();
         $this->load->module_model('email_template','email_template_model');
         $this->lang->module_load('email_template','email_template');
+		$this->bep_assets->load_asset('tinymce');
     }
     
 	public function index()

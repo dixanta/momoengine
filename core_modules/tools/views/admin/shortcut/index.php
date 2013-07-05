@@ -24,8 +24,7 @@
 </div> 
 
 <!--for create and edit shortcut form-->
-<div id="dlg" class="easyui-window" style="width:auto;height:auto;padding:10px 20px"
-        closed="true" collapsible="true" buttons="#dlg-buttons">
+<div id="dlg" class="easyui-dialog" style="width:500px;height:auto;padding:10px 20px" data-options="closed:true,collapsible:true,modal:true,buttons:'#dlg-buttons'">
     <form id="form-shortcut" method="post" >
     <table>
 		<tr>
@@ -50,8 +49,8 @@
     </table>
     </form>
 	<div id="dlg-buttons">
-		<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()"><?= lang('save')?></a>
-		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').window('close')"><?= lang('cancel')?></a>
+		<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()"><?= lang('general_save')?></a>
+		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').window('close')"><?= lang('general_cancel')?></a>
 	</div>    
 </div>
 <!--div ends-->

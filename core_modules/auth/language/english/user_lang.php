@@ -22,6 +22,8 @@ $lang['delete_user']='Delete User';
 $lang['user_search']='User Search';
 
 $lang['user']='User';
+$lang['users']='Users';
+$lang['send_message']='Send Message';
 //$lang['action']='Actions';
 //$lang['saved_successful']='Saved Successful';
 //$lang['delete_successful']='Delete Successful';
