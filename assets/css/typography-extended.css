@@ -1,0 +1,97 @@
+/*OVERRRIDE*/
+ul {
+	list-style-type: none;
+}
+
+
+
+ul#preference_list li a {
+	text-decoration:none;
+	color:#000;
+}
+
+ul#preference_list li a:hover {
+	text-decoration:underline;
+	color:#333;
+}
+
+table#access_control_menu a {
+	text-decoration:none;
+	color:#000;
+}
+
+table#access_control_menu a:hover {
+	text-decoration:underline;
+	color:#333;
+}
+
+
+span a.help {
+	background:url(../icons/help.png) no-repeat;
+	padding:1px 8px;
+	margin-right:10px;
+}
+
+ul#select_menu  li {
+	width:auto; 
+	padding:5px 10px; 
+	background:#e1e1e1; 
+	border:1px solid #CCC; 
+	border-radius:15px;
+	-moz-border-radius:15px; 
+	-webkit-border-radius:15px; 
+	color:#000!important; 
+	text-align:center; 
+	text-decoration:none!important; 
+	margin-bottom:3px;
+}
+
+ul#select_menu li span.mobile {
+	width:16px;	
+	height:16px; 
+	background:url(../icons/mobile.png); 
+	float:right;
+}
+
+ul#select_menu  li span.html {
+	width:16px; 
+	height:16px; 
+	background:url(../icons/html.png); 
+	float:right;
+}
+
+ul#select_menu  li a {
+	color:#000; 
+	text-decoration:none; 
+	transition:all 0.3s ease-in-out 0s; 
+	-moz-transition:all 0.3s ease-in-out 0s;
+}
+ul#select_menu  li a:hover{
+	color:#FFF;
+	text-decoration:none;
+	font-weight:bold;
+	padding-left:5px;
+}
+
+.myDragClass {
+	color: #FFFFFF;
+	background-color:#555555;
+}
+
+form#productnamerule_form tr:hover td  {
+	background:none!important;
+}
+
+span.mobile  {
+    background: url("../icons/mobile.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 16px;
+    width: 16px;
+}
+
+span.html  {
+    background: url("../icons/html.png") repeat scroll 0 0 transparent;
+    float: left;
+    height: 16px;
+    width: 16px;
+}

@@ -1,0 +1,110 @@
+.status_box {
+	height:80px;
+	width:100%;
+	background-color: #fff;
+	position:fixed;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=95); 
+	opacity: 0.95;
+	-moz-opacity: 0.95;
+	text-align:center;
+	left:0px;
+	z-index:9999999;
+	margin:0px;
+	padding:0px;
+	color:ffffff;
+	top:0px;
+
+}
+.status_box h6 {
+	color: #FFFFFF;
+	font-size:2.0em;
+	font-weight:bold;
+	margin: 5px auto 5px 5px;
+
+}
+.status_box ul {
+	margin:20px 0 0 0;
+	color: #ffffff;
+
+}
+.status_box ul li { list-style:none; margin-top:-20px; 	line-height:5px; 	color: #ffffff;  }
+.status_box.info {
+	border-color: #FFFFFF;
+	color: #ffffff;
+	background-image:url('../icons/bg_info.gif');
+}
+.status_box.info h6 { color: #FFFFFF; background: url(../icons/information2.png) no-repeat  ; padding-left: 25px; height:50px; margin:10px 0 0 0; }
+.status_box.success {
+	border-color: #FFFFFF;
+	color: #ffffff;
+	background-image:url('../icons/bg_success.gif');
+}
+.status_box.success h6 { color: #FFFFFF; background: url(../icons/accept2.png) no-repeat ;  height:50px; margin:10px 0 0 0; }
+.status_box.warning {
+	color: #ffffff;
+	border-color: #FFFFFF;
+	background-image:url('../icons/bg_warning.gif');
+}
+.status_box.warning h6 { color: #FFFFFF; background: url(../icons/error2.png) no-repeat; padding-left: 25px; height:50px; margin:10px 0 0 0; }
+.status_box.error {
+	color: #ffffff;
+	border-color: #FFFFFF;
+	background-image:url('../icons/bg_error.gif');
+}
+.status_box.error h6 { color: #FFFFFF; background: url(../icons/exclamation2.png) no-repeat; margin-left: 25px; height:50px; margin:10px 0 0 0;}
+
+/*notification box css*/
+
+.notification_box {
+	height:80px;
+	width:100%;
+	background-color: #fff;
+	position:fixed;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=95); 
+	opacity: 0.95;
+	-moz-opacity: 0.95;
+	text-align:center;
+	left:0px;
+	z-index:9999999;
+	margin:0px;
+	padding:0px;
+	color:ffffff;
+
+}
+.notification_box h6 {
+	color: #FFFFFF;
+	font-size:2.0em;
+	font-weight:bold;
+	margin: 5px auto 5px 5px;
+
+}
+.notification_box ul {
+	margin:20px 0 0 0;
+	color: #ffffff;
+
+}
+.notification_box ul li { list-style:none; margin-top:-20px; 	line-height:5px; 	color: #ffffff;  }
+.notification_box.info {
+	border-color: #FFFFFF;
+	color: #ffffff;
+	background-image:url('../images/status/bg_info.gif');
+}
+.notification_box.info h6 { color: #FFFFFF; background: url(../icons/information2.png) no-repeat  ; padding-left: 25px; height:50px; margin:10px 0 0 0; }
+.notification_box.success {
+	border-color: #FFFFFF;
+	color: #ffffff;
+	background-image:url('../images/status/bg_success.gif');
+}
+.notification_box.success h6 { color: #FFFFFF; background: url(../icons/accept2.png) no-repeat ;  height:50px; margin:10px 0 0 0; }
+.notification_box.warning {
+	color: #ffffff;
+	border-color: #FFFFFF;
+	background-image:url('../images/status/bg_warning.gif');
+}
+.notification_box.warning h6 { color: #FFFFFF; background: url(../icons/error2.png) no-repeat; padding-left: 25px; height:50px; margin:10px 0 0 0; }
+.notification_box.error {
+	color: #ffffff;
+	border-color: #FFFFFF;
+	background-image:url('../images/status/bg_error.gif');
+}
+.notification_box.error h6 { color: #FFFFFF; background: url(../icons/exclamation2.png) no-repeat; margin-left: 25px; height:50px; margin:10px 0 0 0;}

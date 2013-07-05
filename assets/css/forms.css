@@ -1,0 +1,146 @@
+/* -------------------------------------------------------------- 
+   
+   forms.css
+   * Allows the creation of vertical and horizontal forms
+   * Allows sets up basic input element styles
+   
+-------------------------------------------------------------- */
+
+/* Basic form styles */       
+form ol { margin: 0px; padding: 0px; list-style-type: none; }  
+form li { display: block; padding: 0.2em; }       
+form label { display: block; font-weight: bold; } 
+form em { color: red; background-color: #fff; }   
+       
+/* Input elements */
+form input.text, form textarea { width: 20em; }
+form select { width: 15em; }
+form input.file { width: 20em; }
+
+/* Special readonly style */
+form .readonly { background-color: #E0DFE3; color: #99968A; }
+
+/* Form rows */
+form.horizontal li label { display: -moz-inline-box; width: 15em; vertical-align: top; }  
+* form.horizontal li label { display: inline-block;  }
+
+/* Checkbox row */
+/*
+form.vertical li.checkbox span { display: inline; }
+form.horizontal li.checkbox label { display: inline; width: 90%; }
+form.horizontal li.checkbox span { display: inline; }
+*/
+
+/* Submit Button Area */
+form.vertical li.submit { text-align: center; }  
+form.horizontal li.submit { margin-left: 15em; } 
+
+
+
+#wrapper {
+	width:530px;
+	margin:100px auto;
+/*  background: #c9c9c9; 
+background: -moz-linear-gradient(top,  #c9c9c9 0%, #fcfcfc 99%); 
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c9c9c9), color-stop(99%,#fcfcfc)); 
+background: -webkit-linear-gradient(top,  #c9c9c9 0%,#fcfcfc 99%); 
+background: -o-linear-gradient(top,  #c9c9c9 0%,#fcfcfc 99%); 
+background: -ms-linear-gradient(top,  #c9c9c9 0%,#fcfcfc 99%);
+background: linear-gradient(to bottom,  #c9c9c9 0%,#fcfcfc 99%); 
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c9c9c9', endColorstr='#fcfcfc',GradientType=0 );*/
+padding: 2em;
+border-radius:5px;
+-moz-border-radius:5px;
+-webkit-border-radius:5px;
+-o-border-radius:5px;
+-ms-border-radius:5px;
+-khtml-border-radius:5px;
+box-shadow:0px 0px 10px #CCC;
+-moz-box-shadow:0px 0px 10px #ccc;
+-webkit-box-shadow:0px 0px 10px #ccc
+overflow:hidden;
+*border:1px solid #CCC;
+_border:1px solid #CCC;
+border:1px solid #CCC\9;
+*:first-child+html border:1px solid #CCC;
+}
+#wrapper #inform-box{width:325px;
+					overflow:hidden;
+					float:left;
+					margin:0px 20px 10px 10px;}
+#header h1 {
+/*  border-bottom: 1px solid #CCC;*/
+	background:url(../images/logo_login.png) no-repeat center;
+	width:auto;
+	height:70px; color: #555;
+	text-align:center;
+    padding-bottom: 0.2em;
+	 text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+	text-indent:-9999px;
+   
+}
+#content{float:left; box-shadow:0px 0px 10px #CCC;
+-moz-box-shadow:0px 0px 10px #ccc;
+-webkit-box-shadow:0px 0px 10px #ccc;
+padding:20px;}
+#wrapper h3 {
+    color: #555;
+	 text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+	/*background:url(images/logo.png) no-repeat center;*/
+	width:auto;
+	margin-bottom:10px;
+	height:70px; color: #555;
+	text-align:center;
+    padding-bottom: 0.2em;
+	 text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+	text-indent:-9999px;
+	border-bottom:1px solid #CCC;
+}
+#content .info{width:450px;}
+#footer {
+    text-align: center;
+}
+#wrapper input[type="text"],#wrapper input[type="password"]{border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	-ms-border-radius:5px;
+	-khtml-border-radius:5px;
+	 background-image: none;
+	border: 1px solid #B3B3B3;
+	color: #6F6F6F;
+	padding:1px 5px;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2) inset;
+	height:25px;
+}
+#wrapper button, #wrapper a{background-color: #E6E6E6;
+    border-color: #C7C7C7 #B2B2B2 #B2B2B2 #C7C7C7;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 2px 5px rgba(255, 255, 255, 0.5) inset, 0 -2px 5px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 2px 5px rgba(255, 255, 255, 0.5) inset, 0 -2px 5px rgba(0, 0, 0, 0.1) inset;
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset, 0 2px 5px rgba(255, 255, 255, 0.5) inset, 0 -2px 5px rgba(0, 0, 0, 0.1) inset;
+    color: #555555;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	-o-border-radius:5px;
+	-ms-border-radius:5px;
+	-khtml-border-radius:5px;}
+#wrapper  label{text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7); width:103px; line-height:30px;} 
+#wrapper form.horizontal li.submit {
+    margin-left: 110px!important;
+}
+#wrapper .para-over{width:100%;
+				margin:10px 20px 10px 0px;
+				height:125px;
+				border-radius:3px;
+				-moz-border-radius:3px;
+				-webkit-border-radius:3px;
+				-ms-border-radius:3px;
+				-0-border-radius:3px;
+				-khtml-border-radius:3px;
+				border:1px solid #CCC;
+				padding:5px 0px 0px 5px;
+				overflow:auto;}

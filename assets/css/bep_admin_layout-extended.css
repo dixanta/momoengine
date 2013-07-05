@@ -1,0 +1,46 @@
+
+body {
+    background: none repeat scroll 0 0 #EFEFEF;
+    margin: 0;
+}
+
+.main_logo {
+    background: url("../images/small_logo.png") no-repeat scroll 0 0 transparent;
+    float: left;
+    height: 33px;
+    margin: 2px 30px 2px 15px;
+    width: 101px;
+}
+
+#footer {
+    background: -moz-linear-gradient(center top , #FFFFFF 0%, #D6D6D6 100%) repeat scroll 0 0 transparent;
+    border-top: 1px solid #999999;
+    bottom: 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    line-height: 2em;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 5px;
+    text-align: center;
+    text-shadow: 0 1px 0 #FFFFFF;
+    width: 100% !important;
+    z-index: 4;
+}
+
+#copyright {
+    float: left;
+    margin: 0 auto;
+    padding: 5px 0 0 15px;
+    text-align: center;
+}
+
+.demo-info {
+    background: none repeat scroll 0 0 #FFFEE6;
+    color: #8F5700;
+    padding: 12px;
+}
+.demo-tip {
+    float: left;
+    height: 16px;
+    width: 24px;
+}

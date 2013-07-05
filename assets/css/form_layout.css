@@ -1,0 +1,195 @@
+#blog_detail_con {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #E8E8E8;
+    padding: 26px 16px 10px;
+    width: 650px;
+}
+#shop_title {
+    border-bottom: 1px dotted #CCCCCC;
+    margin-bottom: 31px;
+    padding-bottom: 18px;
+}
+
+.blog_title {
+    color: #00524C;
+    font-size: 18px;
+	line-height:1.5;
+	
+}
+#shop_detail_li {
+    padding-left: 23px;
+}
+
+.shop_detail_mgl {
+    margin-bottom: 31px;
+    min-height: 228px;
+    padding-left: 319px;
+    position: relative;
+	width:320px;
+}
+.dtl_shop_txt {
+    position: relative;
+    top: 100px;
+	line-height:1.5;
+	font-size:12px;
+}
+shop_img_list {
+    box-shadow: 2px 2px 2px #D9D9D9;
+}
+
+.green_le, a {
+    color: #009767;
+    font-size: 10px;
+}
+
+.green_le, a {
+    color: #009767;
+    font-size: 10px;
+}
+.shop_img_list {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border: 1px solid #DDDDDD;
+    height: 212px;
+    left: 0;
+    margin-right: 14px;
+    padding: 6px;
+    position: absolute;
+    top: 0;
+    width: 288px;
+}
+
+.mws-report-container {
+    margin-bottom: 24px;
+    width: 100%;}
+.mws-report {
+    -moz-box-sizing: border-box;
+    background: url(images/mws-report-bg.png) repeat-x scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px 6px 6px 6px;
+    color: #323232;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 80px;
+    margin: 8px 1%;
+    min-width: 170px;
+    text-decoration: none;
+    width: 31% !important;
+}
+.mws-report .mws-report-icon {
+    background-position: center center;
+    border-right: 1px solid #CCCCCC;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 48px;
+}
+.mws-ic.ic-building {
+    background-image: url(images/total.png);
+}
+.mws-ic {
+    background-repeat: no-repeat;
+}
+.mws-report .mws-report-content {
+    display: block;
+    margin-left: 49px;
+    padding: 8px 10px;
+}
+.mws-report .mws-report-content .mws-report-title {
+    display: block;
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.mws-report .mws-report-content .mws-report-value {
+    display: inline-block;
+    font-size: 32px;
+    font-weight: bold;
+}
+.mws-ic.ic-sport {
+    background-image: url(images/publish.png);
+}
+.mws-report .mws-report-icon {
+    background-position: center center;
+    border-right: 1px solid #CCCCCC;
+    display: block;
+    float: left;
+    height: 100%;
+    width: 48px;
+}
+.mws-ic.ic-walk {
+    background-image: url(images/unpublish.png);
+}
+.mws-ic.ic-bug {
+    background-image:url(images/close.png);
+}
+.mws-ic.ic-car {
+    background-image: url(images/sum.png);
+}
+.mws-ic.ic-pt {
+    background-image: url(images/publish_toyope.png);
+}
+.mws-ic.ic-unc {
+    background-image:url(images/unconfirm.png);
+}
+.mws-ic.ic-unpub {
+    background-image:url(images/unpub.png);
+}
+a.border{ -moz-box-sizing: border-box;
+    background: url(images/mws-report-bg.png) repeat-x scroll 0 0 #FFFFFF;
+    border: 1px solid #CCCCCC;
+    border-radius: 6px 6px 6px 6px;
+    color: #323232;
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 80px;
+	text-align:center;
+	line-height:80px;
+    margin: 8px 1%;
+    min-width: 170px;
+    text-decoration: none;
+    width: 31% !important;}
+
+span.dash_blog {
+    background:url(images/dash_blog.png) no-repeat center center ;
+	width:64px; height:80px; margin:0px 3px;
+	float:left;
+}
+span.dash_hottopics{
+    background:url(images/dash_hottopics.png) no-repeat center center ;
+	width:64px; height:80px; margin:0px 3px;
+	float:left;
+}
+span.dash_toyopii{
+    background:url(images/dash_toyopii.png) no-repeat center center ;
+	width:64px; height:80px; margin:0px 3px;
+	float:left;
+}
+span.dash_shop {
+    background:url(images/dash_shop.png) no-repeat center center ;
+	width:64px; height:80px; margin:0px 3px;
+	float:left;
+}
+span.dash_slideshow {
+    background:url(images/dash_slideshow.png) no-repeat center center ;
+	width:64px; height:80px; margin:0px 3px;
+	float:left;
+}
+span.dash_gallery {
+    background:url(images/dash_gallery.png) no-repeat center center ;
+	width:64px; height:80px; margin:0px 3px;
+	float:left;
+}
+span.dash_services{
+    background:url(images/dash_services.png) no-repeat center center ;
+	width:64px; height:80px; margin:0px 3px;
+	float:left;
+}
+span.dash_area {
+    background:url(images/dash_area.png) no-repeat center center ;
+	width:64px; height:80px; margin:0px 3px;
+	float:left;
+}
+.body a.border{font-size:14px;}
