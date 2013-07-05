@@ -1,0 +1,828 @@
+INFO  - 2013-01-04 09:12:22 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/
+INFO  - 2013-01-04 09:12:22 --> Base dir set to: /dixsoft1/cleanv3.1/
+INFO  - 2013-01-04 09:12:22 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/system/
+INFO  - 2013-01-04 09:12:22 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/application/
+INFO  - 2013-01-04 09:12:22 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/modules/
+INFO  - 2013-01-04 09:12:22 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/application/logs/
+INFO  - 2013-01-04 09:12:22 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/application/cache/
+INFO  - 2013-01-04 09:12:22 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-04 09:12:22 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-04 09:12:22 --> New feature 'Setup Database' created
+INFO  - 2013-01-04 09:12:22 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-04 09:12:22 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-04 09:12:22 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-04 09:12:22 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-04 09:12:22 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-04 09:12:22 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-04 09:12:22 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-04 09:12:22 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-04 09:12:22 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-04 09:12:22 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-04 09:12:22 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-04 09:12:22 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-04 09:12:22 --> Log Folder writable Component installed
+INFO  - 2013-01-04 09:12:22 --> Asset folders writable Component installed
+INFO  - 2013-01-04 09:12:22 --> Cache Folder writable Component installed
+INFO  - 2013-01-04 09:12:22 --> Config files writable Component installed
+INFO  - 2013-01-04 09:12:22 --> FileSystem Check Feature installed
+INFO  - 2013-01-04 09:12:22 --> Create new system config file Component installed
+INFO  - 2013-01-04 09:12:22 --> Create new database config file Component installed
+INFO  - 2013-01-04 09:12:22 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-04 09:12:22 --> Setup FileSystem Feature installed
+INFO  - 2013-01-04 09:12:23 --> Connect to database Component installed
+INFO  - 2013-01-04 09:12:29 --> Update table schema Component installed
+INFO  - 2013-01-04 09:12:29 --> Create administrator user account Component installed
+INFO  - 2013-01-04 09:12:29 --> Setup Database Feature installed
+INFO  - 2013-01-04 09:31:40 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/
+INFO  - 2013-01-04 09:31:40 --> Base dir set to: /dixsoft1/cleanv3.1/
+INFO  - 2013-01-04 09:31:40 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/system/
+INFO  - 2013-01-04 09:31:40 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/application/
+INFO  - 2013-01-04 09:31:40 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/modules/
+INFO  - 2013-01-04 09:31:40 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/application/logs/
+INFO  - 2013-01-04 09:31:40 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/application/cache/
+INFO  - 2013-01-04 09:31:40 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-04 09:31:40 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-04 09:31:40 --> New feature 'Setup Database' created
+INFO  - 2013-01-04 09:31:40 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-04 09:31:40 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-04 09:31:40 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-04 09:31:40 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-04 09:31:40 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-04 09:31:40 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-04 09:31:40 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-04 09:31:40 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-04 09:31:40 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-04 09:31:40 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-04 09:31:40 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-04 09:31:40 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-04 09:31:40 --> Log Folder writable Component installed
+INFO  - 2013-01-04 09:31:40 --> Asset folders writable Component installed
+INFO  - 2013-01-04 09:31:40 --> Cache Folder writable Component installed
+INFO  - 2013-01-04 09:31:40 --> Config files writable Component installed
+INFO  - 2013-01-04 09:31:40 --> FileSystem Check Feature installed
+INFO  - 2013-01-04 09:31:40 --> Create new system config file Component installed
+INFO  - 2013-01-04 09:31:40 --> Create new database config file Component installed
+INFO  - 2013-01-04 09:31:40 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-04 09:31:40 --> Setup FileSystem Feature installed
+INFO  - 2013-01-04 09:31:41 --> Connect to database Component installed
+INFO  - 2013-01-04 09:31:46 --> Update table schema Component installed
+INFO  - 2013-01-04 09:31:46 --> Create administrator user account Component installed
+INFO  - 2013-01-04 09:31:46 --> Setup Database Feature installed
+INFO  - 2013-01-04 09:42:43 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/
+INFO  - 2013-01-04 09:42:43 --> Base dir set to: /dixsoft1/cleanv3.1/
+INFO  - 2013-01-04 09:42:43 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/system/
+INFO  - 2013-01-04 09:42:43 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/application/
+INFO  - 2013-01-04 09:42:43 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/modules/
+INFO  - 2013-01-04 09:42:43 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/application/logs/
+INFO  - 2013-01-04 09:42:43 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.1/application/cache/
+INFO  - 2013-01-04 09:42:43 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-04 09:42:43 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-04 09:42:43 --> New feature 'Setup Database' created
+INFO  - 2013-01-04 09:42:43 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-04 09:42:43 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-04 09:42:43 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-04 09:42:43 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-04 09:42:43 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-04 09:42:43 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-04 09:42:43 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-04 09:42:43 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-04 09:42:43 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-04 09:42:43 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-04 09:42:43 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-04 09:42:43 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-04 09:42:43 --> Log Folder writable Component installed
+INFO  - 2013-01-04 09:42:43 --> Asset folders writable Component installed
+INFO  - 2013-01-04 09:42:43 --> Cache Folder writable Component installed
+INFO  - 2013-01-04 09:42:43 --> Config files writable Component installed
+INFO  - 2013-01-04 09:42:43 --> FileSystem Check Feature installed
+INFO  - 2013-01-04 09:42:43 --> Create new system config file Component installed
+INFO  - 2013-01-04 09:42:43 --> Create new database config file Component installed
+INFO  - 2013-01-04 09:42:43 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-04 09:42:43 --> Setup FileSystem Feature installed
+INFO  - 2013-01-04 09:42:44 --> Connect to database Component installed
+INFO  - 2013-01-04 09:42:49 --> Update table schema Component installed
+INFO  - 2013-01-04 09:42:49 --> Create administrator user account Component installed
+INFO  - 2013-01-04 09:42:49 --> Setup Database Feature installed
+INFO  - 2013-01-08 10:20:56 --> Base path set to: C:/wamp/www//cleanv3.2/cleanv3.2/
+INFO  - 2013-01-08 10:20:56 --> Base dir set to: /cleanv3.2/cleanv3.2/
+INFO  - 2013-01-08 10:20:56 --> System path set to: C:/wamp/www//cleanv3.2/cleanv3.2/system/
+INFO  - 2013-01-08 10:20:56 --> Application path set to: C:/wamp/www//cleanv3.2/cleanv3.2/application/
+INFO  - 2013-01-08 10:20:56 --> Modules path set to: C:/wamp/www//cleanv3.2/cleanv3.2/modules/
+INFO  - 2013-01-08 10:20:56 --> Logs path set to: C:/wamp/www//cleanv3.2/cleanv3.2/application/logs/
+INFO  - 2013-01-08 10:20:56 --> Cache path set to: C:/wamp/www//cleanv3.2/cleanv3.2/application/cache/
+INFO  - 2013-01-08 10:20:56 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-08 10:20:56 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-08 10:20:56 --> New feature 'Setup Database' created
+INFO  - 2013-01-08 10:20:56 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-08 10:20:56 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-08 10:20:56 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 10:20:56 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 10:20:56 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 10:20:56 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 10:20:56 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 10:20:56 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 10:20:56 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 10:20:56 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-08 10:20:56 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-08 10:20:56 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-08 10:20:56 --> Log Folder writable Component installed
+INFO  - 2013-01-08 10:20:56 --> Asset folders writable Component installed
+INFO  - 2013-01-08 10:20:56 --> Cache Folder writable Component installed
+INFO  - 2013-01-08 10:20:56 --> Config files writable Component installed
+INFO  - 2013-01-08 10:20:56 --> FileSystem Check Feature installed
+INFO  - 2013-01-08 10:20:56 --> Create new system config file Component installed
+INFO  - 2013-01-08 10:20:56 --> Create new database config file Component installed
+INFO  - 2013-01-08 10:20:56 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-08 10:20:56 --> Setup FileSystem Feature installed
+INFO  - 2013-01-08 10:20:56 --> Connect to database Component installed
+INFO  - 2013-01-08 10:20:58 --> Update table schema Component installed
+INFO  - 2013-01-08 10:20:58 --> Create administrator user account Component installed
+INFO  - 2013-01-08 10:20:58 --> Setup Database Feature installed
+INFO  - 2013-01-08 14:09:48 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:09:48 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:09:48 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-08 14:09:48 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-08 14:09:48 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-08 14:09:48 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-08 14:09:48 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-08 14:09:48 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-08 14:09:48 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-08 14:09:48 --> New feature 'Setup Database' created
+INFO  - 2013-01-08 14:09:48 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-08 14:09:48 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-08 14:09:49 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:09:49 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:09:49 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:09:49 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:09:49 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:09:49 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:09:49 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:09:49 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:09:49 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:09:49 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:09:49 --> Log Folder writable Component installed
+INFO  - 2013-01-08 14:09:49 --> Asset folders writable Component installed
+INFO  - 2013-01-08 14:09:49 --> Cache Folder writable Component installed
+INFO  - 2013-01-08 14:09:49 --> Config files writable Component installed
+INFO  - 2013-01-08 14:09:49 --> FileSystem Check Feature installed
+INFO  - 2013-01-08 14:09:49 --> Create new system config file Component installed
+INFO  - 2013-01-08 14:09:49 --> Create new database config file Component installed
+INFO  - 2013-01-08 14:09:49 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-08 14:09:49 --> Setup FileSystem Feature installed
+ERROR - 2013-01-08 14:09:50 --> No database selected
+ERROR - 2013-01-08 14:09:50 --> Connect to database Component install failed: 
+INFO  - 2013-01-08 14:09:50 --> Attempting to roll back Components for 'Setup Database' Feature
+INFO  - 2013-01-08 14:27:41 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:27:41 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:27:41 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-08 14:27:41 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-08 14:27:41 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-08 14:27:41 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-08 14:27:41 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-08 14:27:41 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-08 14:27:41 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-08 14:27:41 --> New feature 'Setup Database' created
+INFO  - 2013-01-08 14:27:41 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-08 14:27:41 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-08 14:27:41 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:27:41 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:27:41 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:27:41 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:27:41 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:27:41 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:27:41 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:27:41 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:27:41 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:27:41 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:27:41 --> Log Folder writable Component installed
+INFO  - 2013-01-08 14:27:41 --> Asset folders writable Component installed
+INFO  - 2013-01-08 14:27:41 --> Cache Folder writable Component installed
+INFO  - 2013-01-08 14:27:41 --> Config files writable Component installed
+INFO  - 2013-01-08 14:27:41 --> FileSystem Check Feature installed
+INFO  - 2013-01-08 14:27:41 --> Create new system config file Component installed
+INFO  - 2013-01-08 14:27:41 --> Create new database config file Component installed
+INFO  - 2013-01-08 14:27:41 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-08 14:27:41 --> Setup FileSystem Feature installed
+ERROR - 2013-01-08 14:27:42 --> No database selected
+ERROR - 2013-01-08 14:27:42 --> Connect to database Component install failed: 
+INFO  - 2013-01-08 14:27:42 --> Attempting to roll back Components for 'Setup Database' Feature
+INFO  - 2013-01-08 14:29:33 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:29:33 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:29:33 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-08 14:29:33 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-08 14:29:33 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-08 14:29:33 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-08 14:29:33 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-08 14:29:33 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-08 14:29:33 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-08 14:29:33 --> New feature 'Setup Database' created
+INFO  - 2013-01-08 14:29:33 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-08 14:29:33 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-08 14:29:33 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:29:33 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:29:33 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:29:33 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:29:33 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:29:33 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:29:33 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:29:33 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:29:33 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:29:33 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:29:33 --> Log Folder writable Component installed
+INFO  - 2013-01-08 14:29:33 --> Asset folders writable Component installed
+INFO  - 2013-01-08 14:29:33 --> Cache Folder writable Component installed
+INFO  - 2013-01-08 14:29:33 --> Config files writable Component installed
+INFO  - 2013-01-08 14:29:33 --> FileSystem Check Feature installed
+INFO  - 2013-01-08 14:29:33 --> Create new system config file Component installed
+INFO  - 2013-01-08 14:29:33 --> Create new database config file Component installed
+INFO  - 2013-01-08 14:29:33 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-08 14:29:33 --> Setup FileSystem Feature installed
+ERROR - 2013-01-08 14:29:34 --> No database selected
+ERROR - 2013-01-08 14:29:34 --> Connect to database Component install failed: 
+INFO  - 2013-01-08 14:29:34 --> Attempting to roll back Components for 'Setup Database' Feature
+INFO  - 2013-01-08 14:30:34 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:30:34 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:30:34 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-08 14:30:34 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-08 14:30:34 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-08 14:30:34 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-08 14:30:34 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-08 14:30:34 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-08 14:30:34 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-08 14:30:34 --> New feature 'Setup Database' created
+INFO  - 2013-01-08 14:30:34 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-08 14:30:34 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-08 14:30:34 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:30:35 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:30:35 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:30:35 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:30:35 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:30:35 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:30:35 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:30:35 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:30:35 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:30:35 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:30:35 --> Log Folder writable Component installed
+INFO  - 2013-01-08 14:30:35 --> Asset folders writable Component installed
+INFO  - 2013-01-08 14:30:35 --> Cache Folder writable Component installed
+INFO  - 2013-01-08 14:30:35 --> Config files writable Component installed
+INFO  - 2013-01-08 14:30:35 --> FileSystem Check Feature installed
+INFO  - 2013-01-08 14:30:35 --> Create new system config file Component installed
+INFO  - 2013-01-08 14:30:35 --> Create new database config file Component installed
+INFO  - 2013-01-08 14:30:35 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-08 14:30:35 --> Setup FileSystem Feature installed
+ERROR - 2013-01-08 14:30:36 --> No database selected
+ERROR - 2013-01-08 14:30:36 --> Connect to database Component install failed: 
+INFO  - 2013-01-08 14:30:36 --> Attempting to roll back Components for 'Setup Database' Feature
+INFO  - 2013-01-08 14:30:52 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:30:52 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:30:52 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-08 14:30:52 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-08 14:30:52 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-08 14:30:52 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-08 14:30:52 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-08 14:30:52 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-08 14:30:52 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-08 14:30:52 --> New feature 'Setup Database' created
+INFO  - 2013-01-08 14:30:52 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-08 14:30:52 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-08 14:30:52 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:30:52 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:30:52 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:30:52 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:30:52 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:30:52 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:30:52 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:30:52 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:30:52 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:30:52 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:30:52 --> Log Folder writable Component installed
+INFO  - 2013-01-08 14:30:52 --> Asset folders writable Component installed
+INFO  - 2013-01-08 14:30:52 --> Cache Folder writable Component installed
+INFO  - 2013-01-08 14:30:52 --> Config files writable Component installed
+INFO  - 2013-01-08 14:30:52 --> FileSystem Check Feature installed
+INFO  - 2013-01-08 14:30:52 --> Create new system config file Component installed
+INFO  - 2013-01-08 14:30:52 --> Create new database config file Component installed
+INFO  - 2013-01-08 14:30:52 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-08 14:30:52 --> Setup FileSystem Feature installed
+ERROR - 2013-01-08 14:30:54 --> Unknown database 'dixanta'
+ERROR - 2013-01-08 14:30:54 --> Connect to database Component install failed: 
+INFO  - 2013-01-08 14:30:54 --> Attempting to roll back Components for 'Setup Database' Feature
+INFO  - 2013-01-08 14:31:10 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:31:10 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:31:10 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-08 14:31:10 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-08 14:31:10 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-08 14:31:10 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-08 14:31:10 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-08 14:31:10 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-08 14:31:10 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-08 14:31:10 --> New feature 'Setup Database' created
+INFO  - 2013-01-08 14:31:10 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-08 14:31:10 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-08 14:31:10 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:31:10 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:31:10 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:31:10 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:31:10 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:31:10 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:31:10 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:31:10 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:31:10 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:31:10 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:31:10 --> Log Folder writable Component installed
+INFO  - 2013-01-08 14:31:10 --> Asset folders writable Component installed
+INFO  - 2013-01-08 14:31:10 --> Cache Folder writable Component installed
+INFO  - 2013-01-08 14:31:10 --> Config files writable Component installed
+INFO  - 2013-01-08 14:31:10 --> FileSystem Check Feature installed
+INFO  - 2013-01-08 14:31:10 --> Create new system config file Component installed
+INFO  - 2013-01-08 14:31:10 --> Create new database config file Component installed
+INFO  - 2013-01-08 14:31:10 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-08 14:31:10 --> Setup FileSystem Feature installed
+INFO  - 2013-01-08 14:31:11 --> Connect to database Component installed
+INFO  - 2013-01-08 14:31:16 --> Update table schema Component installed
+INFO  - 2013-01-08 14:31:16 --> Create administrator user account Component installed
+INFO  - 2013-01-08 14:31:16 --> Setup Database Feature installed
+INFO  - 2013-01-08 14:52:04 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:52:04 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:52:04 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-08 14:52:04 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-08 14:52:04 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-08 14:52:04 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-08 14:52:04 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-08 14:52:04 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-08 14:52:04 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-08 14:52:04 --> New feature 'Setup Database' created
+INFO  - 2013-01-08 14:52:04 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-08 14:52:04 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-08 14:52:04 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:52:04 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:52:04 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:52:04 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:52:04 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:52:04 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:52:04 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:52:04 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:52:04 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:52:04 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:52:04 --> Log Folder writable Component installed
+INFO  - 2013-01-08 14:52:04 --> Asset folders writable Component installed
+INFO  - 2013-01-08 14:52:04 --> Cache Folder writable Component installed
+INFO  - 2013-01-08 14:52:04 --> Config files writable Component installed
+INFO  - 2013-01-08 14:52:04 --> FileSystem Check Feature installed
+INFO  - 2013-01-08 14:52:04 --> Create new system config file Component installed
+INFO  - 2013-01-08 14:52:04 --> Create new database config file Component installed
+INFO  - 2013-01-08 14:52:04 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-08 14:52:04 --> Setup FileSystem Feature installed
+INFO  - 2013-01-08 14:52:05 --> Connect to database Component installed
+INFO  - 2013-01-08 14:52:10 --> Update table schema Component installed
+INFO  - 2013-01-08 14:52:10 --> Create administrator user account Component installed
+INFO  - 2013-01-08 14:52:10 --> Setup Database Feature installed
+INFO  - 2013-01-08 14:52:56 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:52:56 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-08 14:52:56 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-08 14:52:56 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-08 14:52:56 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-08 14:52:56 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-08 14:52:56 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-08 14:52:56 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-08 14:52:56 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-08 14:52:56 --> New feature 'Setup Database' created
+INFO  - 2013-01-08 14:52:56 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-08 14:52:56 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-08 14:52:56 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:52:56 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:52:56 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:52:56 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-08 14:52:56 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:52:56 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:52:56 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-08 14:52:56 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:52:56 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:52:56 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-08 14:52:56 --> Log Folder writable Component installed
+INFO  - 2013-01-08 14:52:56 --> Asset folders writable Component installed
+INFO  - 2013-01-08 14:52:56 --> Cache Folder writable Component installed
+INFO  - 2013-01-08 14:52:56 --> Config files writable Component installed
+INFO  - 2013-01-08 14:52:56 --> FileSystem Check Feature installed
+INFO  - 2013-01-08 14:52:56 --> Create new system config file Component installed
+INFO  - 2013-01-08 14:52:56 --> Create new database config file Component installed
+INFO  - 2013-01-08 14:52:56 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-08 14:52:56 --> Setup FileSystem Feature installed
+INFO  - 2013-01-08 14:52:57 --> Connect to database Component installed
+INFO  - 2013-01-08 14:53:02 --> Update table schema Component installed
+INFO  - 2013-01-08 14:53:02 --> Create administrator user account Component installed
+INFO  - 2013-01-08 14:53:02 --> Setup Database Feature installed
+INFO  - 2013-01-09 13:14:21 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-09 13:14:21 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-09 13:14:21 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-09 13:14:21 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-09 13:14:21 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-09 13:14:21 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-09 13:14:21 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-09 13:14:21 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-09 13:14:21 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-09 13:14:21 --> New feature 'Setup Database' created
+INFO  - 2013-01-09 13:14:21 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-09 13:14:21 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-09 13:14:21 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-09 13:14:21 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-09 13:14:21 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-09 13:14:21 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-09 13:14:21 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-09 13:14:21 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-09 13:14:21 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-09 13:14:21 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-09 13:14:21 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-09 13:14:21 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-09 13:14:21 --> Log Folder writable Component installed
+INFO  - 2013-01-09 13:14:21 --> Asset folders writable Component installed
+INFO  - 2013-01-09 13:14:21 --> Cache Folder writable Component installed
+INFO  - 2013-01-09 13:14:21 --> Config files writable Component installed
+INFO  - 2013-01-09 13:14:21 --> FileSystem Check Feature installed
+INFO  - 2013-01-09 13:14:21 --> Create new system config file Component installed
+INFO  - 2013-01-09 13:14:22 --> Create new database config file Component installed
+INFO  - 2013-01-09 13:14:22 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-09 13:14:22 --> Setup FileSystem Feature installed
+INFO  - 2013-01-09 13:14:23 --> Connect to database Component installed
+INFO  - 2013-01-09 13:14:28 --> Update table schema Component installed
+INFO  - 2013-01-09 13:14:28 --> Create administrator user account Component installed
+INFO  - 2013-01-09 13:14:28 --> Setup Database Feature installed
+INFO  - 2013-01-11 08:19:06 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-11 08:19:06 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-11 08:19:06 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-11 08:19:06 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-11 08:19:06 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-11 08:19:06 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-11 08:19:06 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-11 08:19:06 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-11 08:19:06 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-11 08:19:06 --> New feature 'Setup Database' created
+INFO  - 2013-01-11 08:19:06 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-11 08:19:06 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-11 08:19:06 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-11 08:19:06 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-11 08:19:06 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-11 08:19:06 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-11 08:19:06 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-11 08:19:06 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-11 08:19:06 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-11 08:19:06 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-11 08:19:06 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-11 08:19:06 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-11 08:19:06 --> Log Folder writable Component installed
+INFO  - 2013-01-11 08:19:06 --> Asset folders writable Component installed
+INFO  - 2013-01-11 08:19:06 --> Cache Folder writable Component installed
+INFO  - 2013-01-11 08:19:06 --> Config files writable Component installed
+INFO  - 2013-01-11 08:19:06 --> FileSystem Check Feature installed
+INFO  - 2013-01-11 08:19:06 --> Create new system config file Component installed
+INFO  - 2013-01-11 08:19:06 --> Create new database config file Component installed
+INFO  - 2013-01-11 08:19:06 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-11 08:19:06 --> Setup FileSystem Feature installed
+INFO  - 2013-01-11 08:19:07 --> Connect to database Component installed
+ERROR - 2013-01-11 08:19:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''activate_google_analytics', '0')' at line 1
+ERROR - 2013-01-11 08:19:09 --> Update table schema Component install failed: 
+INFO  - 2013-01-11 08:19:09 --> Attempting to roll back Components for 'Setup Database' Feature
+INFO  - 2013-01-11 08:20:19 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-11 08:20:19 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-11 08:20:19 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-11 08:20:19 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-11 08:20:19 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-11 08:20:19 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-11 08:20:19 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-11 08:20:19 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-11 08:20:19 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-11 08:20:19 --> New feature 'Setup Database' created
+INFO  - 2013-01-11 08:20:19 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-11 08:20:19 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-11 08:20:19 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-11 08:20:19 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-11 08:20:19 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-11 08:20:19 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-11 08:20:19 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-11 08:20:19 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-11 08:20:19 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-11 08:20:19 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-11 08:20:19 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-11 08:20:19 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-11 08:20:19 --> Log Folder writable Component installed
+INFO  - 2013-01-11 08:20:19 --> Asset folders writable Component installed
+INFO  - 2013-01-11 08:20:19 --> Cache Folder writable Component installed
+INFO  - 2013-01-11 08:20:19 --> Config files writable Component installed
+INFO  - 2013-01-11 08:20:19 --> FileSystem Check Feature installed
+INFO  - 2013-01-11 08:20:19 --> Create new system config file Component installed
+INFO  - 2013-01-11 08:20:19 --> Create new database config file Component installed
+INFO  - 2013-01-11 08:20:19 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-11 08:20:19 --> Setup FileSystem Feature installed
+INFO  - 2013-01-11 08:20:20 --> Connect to database Component installed
+ERROR - 2013-01-11 08:20:22 --> You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''activate_google_analytics', '0')' at line 1
+ERROR - 2013-01-11 08:20:22 --> Update table schema Component install failed: 
+INFO  - 2013-01-11 08:20:22 --> Attempting to roll back Components for 'Setup Database' Feature
+INFO  - 2013-01-11 08:21:16 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-11 08:21:16 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-11 08:21:16 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-11 08:21:16 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-11 08:21:16 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-11 08:21:16 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-11 08:21:16 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-11 08:21:16 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-11 08:21:16 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-11 08:21:16 --> New feature 'Setup Database' created
+INFO  - 2013-01-11 08:21:16 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-11 08:21:16 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-11 08:21:16 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-11 08:21:16 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-11 08:21:16 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-11 08:21:16 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-11 08:21:16 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-11 08:21:16 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-11 08:21:16 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-11 08:21:16 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-11 08:21:16 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-11 08:21:16 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-11 08:21:16 --> Log Folder writable Component installed
+INFO  - 2013-01-11 08:21:16 --> Asset folders writable Component installed
+INFO  - 2013-01-11 08:21:16 --> Cache Folder writable Component installed
+INFO  - 2013-01-11 08:21:16 --> Config files writable Component installed
+INFO  - 2013-01-11 08:21:16 --> FileSystem Check Feature installed
+INFO  - 2013-01-11 08:21:16 --> Create new system config file Component installed
+INFO  - 2013-01-11 08:21:16 --> Create new database config file Component installed
+INFO  - 2013-01-11 08:21:16 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-11 08:21:16 --> Setup FileSystem Feature installed
+INFO  - 2013-01-11 08:21:17 --> Connect to database Component installed
+INFO  - 2013-01-11 08:21:24 --> Update table schema Component installed
+INFO  - 2013-01-11 08:21:24 --> Create administrator user account Component installed
+INFO  - 2013-01-11 08:21:24 --> Setup Database Feature installed
+INFO  - 2013-01-14 17:59:52 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-14 17:59:52 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-14 17:59:52 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-14 17:59:52 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-14 17:59:52 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-14 17:59:52 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-14 17:59:52 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-14 17:59:52 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-14 17:59:52 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-14 17:59:52 --> New feature 'Setup Database' created
+INFO  - 2013-01-14 17:59:52 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-14 17:59:52 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-14 17:59:52 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-14 17:59:52 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-14 17:59:52 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-14 17:59:52 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-14 17:59:52 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-14 17:59:52 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-14 17:59:52 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-14 17:59:52 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-14 17:59:52 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-14 17:59:52 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-14 17:59:52 --> Log Folder writable Component installed
+INFO  - 2013-01-14 17:59:52 --> Asset folders writable Component installed
+INFO  - 2013-01-14 17:59:52 --> Cache Folder writable Component installed
+INFO  - 2013-01-14 17:59:52 --> Config files writable Component installed
+INFO  - 2013-01-14 17:59:52 --> FileSystem Check Feature installed
+INFO  - 2013-01-14 17:59:52 --> Create new system config file Component installed
+INFO  - 2013-01-14 17:59:52 --> Create new database config file Component installed
+INFO  - 2013-01-14 17:59:52 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-14 17:59:52 --> Setup FileSystem Feature installed
+INFO  - 2013-01-14 17:59:53 --> Connect to database Component installed
+INFO  - 2013-01-14 18:00:00 --> Update table schema Component installed
+INFO  - 2013-01-14 18:00:00 --> Create administrator user account Component installed
+INFO  - 2013-01-14 18:00:00 --> Setup Database Feature installed
+INFO  - 2013-01-14 19:02:54 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-14 19:02:54 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-14 19:02:54 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-14 19:02:54 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-14 19:02:54 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-14 19:02:54 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-14 19:02:54 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-14 19:02:54 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-14 19:02:54 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-14 19:02:54 --> New feature 'Setup Database' created
+INFO  - 2013-01-14 19:02:54 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-14 19:02:54 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-14 19:02:54 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-14 19:02:54 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-14 19:02:54 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-14 19:02:54 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-14 19:02:54 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-14 19:02:54 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-14 19:02:54 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-14 19:02:54 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-14 19:02:54 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-14 19:02:54 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-14 19:02:54 --> Log Folder writable Component installed
+INFO  - 2013-01-14 19:02:54 --> Asset folders writable Component installed
+INFO  - 2013-01-14 19:02:54 --> Cache Folder writable Component installed
+INFO  - 2013-01-14 19:02:54 --> Config files writable Component installed
+INFO  - 2013-01-14 19:02:54 --> FileSystem Check Feature installed
+INFO  - 2013-01-14 19:02:54 --> Create new system config file Component installed
+INFO  - 2013-01-14 19:02:54 --> Create new database config file Component installed
+INFO  - 2013-01-14 19:02:54 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-14 19:02:54 --> Setup FileSystem Feature installed
+ERROR - 2013-01-14 19:02:55 --> Unknown database 'dbsoup'
+ERROR - 2013-01-14 19:02:55 --> Connect to database Component install failed: 
+INFO  - 2013-01-14 19:02:55 --> Attempting to roll back Components for 'Setup Database' Feature
+INFO  - 2013-01-14 19:03:12 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-01-14 19:03:12 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-01-14 19:03:12 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-01-14 19:03:12 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-01-14 19:03:12 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-01-14 19:03:12 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-01-14 19:03:12 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-01-14 19:03:12 --> New feature 'FileSystem Check' created
+INFO  - 2013-01-14 19:03:12 --> New feature 'Setup FileSystem' created
+INFO  - 2013-01-14 19:03:12 --> New feature 'Setup Database' created
+INFO  - 2013-01-14 19:03:12 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-01-14 19:03:12 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-01-14 19:03:12 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-14 19:03:12 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-14 19:03:12 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-14 19:03:12 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-01-14 19:03:12 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-14 19:03:12 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-14 19:03:12 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-01-14 19:03:12 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-01-14 19:03:12 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-01-14 19:03:12 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-01-14 19:03:12 --> Log Folder writable Component installed
+INFO  - 2013-01-14 19:03:12 --> Asset folders writable Component installed
+INFO  - 2013-01-14 19:03:12 --> Cache Folder writable Component installed
+INFO  - 2013-01-14 19:03:12 --> Config files writable Component installed
+INFO  - 2013-01-14 19:03:12 --> FileSystem Check Feature installed
+INFO  - 2013-01-14 19:03:12 --> Create new system config file Component installed
+INFO  - 2013-01-14 19:03:12 --> Create new database config file Component installed
+INFO  - 2013-01-14 19:03:12 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-01-14 19:03:12 --> Setup FileSystem Feature installed
+INFO  - 2013-01-14 19:03:13 --> Connect to database Component installed
+INFO  - 2013-01-14 19:03:18 --> Update table schema Component installed
+INFO  - 2013-01-14 19:03:18 --> Create administrator user account Component installed
+INFO  - 2013-01-14 19:03:18 --> Setup Database Feature installed
+INFO  - 2013-02-01 06:51:38 --> Base path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/
+INFO  - 2013-02-01 06:51:38 --> Base dir set to: /dixsoft1/cleanv3.2/
+INFO  - 2013-02-01 06:51:38 --> System path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/system/
+INFO  - 2013-02-01 06:51:38 --> Application path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/
+INFO  - 2013-02-01 06:51:38 --> Modules path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/modules/
+INFO  - 2013-02-01 06:51:38 --> Logs path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/logs/
+INFO  - 2013-02-01 06:51:38 --> Cache path set to: D:/xampp/htdocs/dixsoft1/cleanv3.2/application/cache/
+INFO  - 2013-02-01 06:51:38 --> New feature 'FileSystem Check' created
+INFO  - 2013-02-01 06:51:38 --> New feature 'Setup FileSystem' created
+INFO  - 2013-02-01 06:51:38 --> New feature 'Setup Database' created
+INFO  - 2013-02-01 06:51:38 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-02-01 06:51:38 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-02-01 06:51:38 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-02-01 06:51:38 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-02-01 06:51:38 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-02-01 06:51:38 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-02-01 06:51:38 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-02-01 06:51:38 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-02-01 06:51:38 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-02-01 06:51:38 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-02-01 06:51:38 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-02-01 06:51:38 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-02-01 06:51:38 --> Log Folder writable Component installed
+INFO  - 2013-02-01 06:51:38 --> Asset folders writable Component installed
+INFO  - 2013-02-01 06:51:38 --> Cache Folder writable Component installed
+INFO  - 2013-02-01 06:51:39 --> Config files writable Component installed
+INFO  - 2013-02-01 06:51:39 --> FileSystem Check Feature installed
+INFO  - 2013-02-01 06:51:39 --> Create new system config file Component installed
+INFO  - 2013-02-01 06:51:39 --> Create new database config file Component installed
+INFO  - 2013-02-01 06:51:39 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-02-01 06:51:39 --> Setup FileSystem Feature installed
+INFO  - 2013-02-01 06:51:40 --> Connect to database Component installed
+INFO  - 2013-02-01 06:51:48 --> Update table schema Component installed
+INFO  - 2013-02-01 06:51:48 --> Create administrator user account Component installed
+INFO  - 2013-02-01 06:51:48 --> Setup Database Feature installed
+INFO  - 2013-06-17 14:04:15 --> Base path set to: D:/xampp/htdocs/framework/momo/v3/
+INFO  - 2013-06-17 14:04:15 --> Base dir set to: /framework/momo/v3/
+INFO  - 2013-06-17 14:04:15 --> System path set to: D:/xampp/htdocs/framework/momo/v3/system/
+INFO  - 2013-06-17 14:04:15 --> Application path set to: D:/xampp/htdocs/framework/momo/v3/application/
+INFO  - 2013-06-17 14:04:15 --> Modules path set to: D:/xampp/htdocs/framework/momo/v3/modules/
+INFO  - 2013-06-17 14:04:15 --> Logs path set to: D:/xampp/htdocs/framework/momo/v3/application/logs/
+INFO  - 2013-06-17 14:04:15 --> Cache path set to: D:/xampp/htdocs/framework/momo/v3/application/cache/
+INFO  - 2013-06-17 14:04:15 --> New feature 'FileSystem Check' created
+INFO  - 2013-06-17 14:04:15 --> New feature 'Setup FileSystem' created
+INFO  - 2013-06-17 14:04:15 --> New feature 'Setup Database' created
+INFO  - 2013-06-17 14:04:15 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-06-17 14:04:15 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-06-17 14:04:15 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-06-17 14:04:15 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-06-17 14:04:15 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-06-17 14:04:15 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-06-17 14:04:15 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-06-17 14:04:15 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-06-17 14:04:15 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-06-17 14:04:15 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-06-17 14:04:15 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-06-17 14:04:15 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-06-17 14:04:15 --> Log Folder writable Component installed
+INFO  - 2013-06-17 14:04:15 --> Asset folders writable Component installed
+INFO  - 2013-06-17 14:04:15 --> Cache Folder writable Component installed
+ERROR - 2013-06-17 14:04:15 --> Config files writable Component install failed: D:/xampp/htdocs/framework/momo/v3/modules/recaptcha/config/recaptcha.php file isn't writable
+INFO  - 2013-06-17 14:04:15 --> Attempting to roll back Components for 'FileSystem Check' Feature
+INFO  - 2013-06-17 14:04:15 --> Setup FileSystem Feature installation haulted since its prerequisite feature 'FileSystem Check' failed to install
+INFO  - 2013-06-17 14:04:15 --> Setup Database Feature installation haulted since its prerequisite feature 'Setup FileSystem' failed to install
+INFO  - 2013-06-17 14:04:40 --> Base path set to: D:/xampp/htdocs/framework/momo/v3/
+INFO  - 2013-06-17 14:04:40 --> Base dir set to: /framework/momo/v3/
+INFO  - 2013-06-17 14:04:40 --> System path set to: D:/xampp/htdocs/framework/momo/v3/system/
+INFO  - 2013-06-17 14:04:40 --> Application path set to: D:/xampp/htdocs/framework/momo/v3/application/
+INFO  - 2013-06-17 14:04:40 --> Modules path set to: D:/xampp/htdocs/framework/momo/v3/core_modules/
+INFO  - 2013-06-17 14:04:40 --> Logs path set to: D:/xampp/htdocs/framework/momo/v3/application/logs/
+INFO  - 2013-06-17 14:04:40 --> Cache path set to: D:/xampp/htdocs/framework/momo/v3/application/cache/
+INFO  - 2013-06-17 14:04:40 --> New feature 'FileSystem Check' created
+INFO  - 2013-06-17 14:04:40 --> New feature 'Setup FileSystem' created
+INFO  - 2013-06-17 14:04:40 --> New feature 'Setup Database' created
+INFO  - 2013-06-17 14:04:40 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-06-17 14:04:40 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-06-17 14:04:40 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-06-17 14:04:40 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-06-17 14:04:40 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-06-17 14:04:40 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-06-17 14:04:40 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-06-17 14:04:40 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-06-17 14:04:40 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-06-17 14:04:40 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-06-17 14:04:40 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-06-17 14:04:40 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-06-17 14:04:40 --> Log Folder writable Component installed
+INFO  - 2013-06-17 14:04:40 --> Asset folders writable Component installed
+INFO  - 2013-06-17 14:04:40 --> Cache Folder writable Component installed
+INFO  - 2013-06-17 14:04:40 --> Config files writable Component installed
+INFO  - 2013-06-17 14:04:40 --> FileSystem Check Feature installed
+INFO  - 2013-06-17 14:04:40 --> Create new system config file Component installed
+INFO  - 2013-06-17 14:04:40 --> Create new database config file Component installed
+INFO  - 2013-06-17 14:04:40 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-06-17 14:04:40 --> Setup FileSystem Feature installed
+INFO  - 2013-06-17 14:04:40 --> Connect to database Component installed
+INFO  - 2013-06-17 14:04:46 --> Update table schema Component installed
+INFO  - 2013-06-17 14:04:46 --> Create administrator user account Component installed
+INFO  - 2013-06-17 14:04:46 --> Setup Database Feature installed
+INFO  - 2013-06-17 14:06:21 --> Base path set to: D:/xampp/htdocs/framework/momo/v3/
+INFO  - 2013-06-17 14:06:21 --> Base dir set to: /framework/momo/v3/
+INFO  - 2013-06-17 14:06:21 --> System path set to: D:/xampp/htdocs/framework/momo/v3/system/
+INFO  - 2013-06-17 14:06:21 --> Application path set to: D:/xampp/htdocs/framework/momo/v3/application/
+INFO  - 2013-06-17 14:06:21 --> Modules path set to: D:/xampp/htdocs/framework/momo/v3/core_modules/
+INFO  - 2013-06-17 14:06:21 --> Logs path set to: D:/xampp/htdocs/framework/momo/v3/application/logs/
+INFO  - 2013-06-17 14:06:21 --> Cache path set to: D:/xampp/htdocs/framework/momo/v3/application/cache/
+INFO  - 2013-06-17 14:06:21 --> New feature 'FileSystem Check' created
+INFO  - 2013-06-17 14:06:21 --> New feature 'Setup FileSystem' created
+INFO  - 2013-06-17 14:06:21 --> New feature 'Setup Database' created
+INFO  - 2013-06-17 14:06:21 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-06-17 14:06:21 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-06-17 14:06:21 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-06-17 14:06:21 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-06-17 14:06:21 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-06-17 14:06:21 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-06-17 14:06:21 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-06-17 14:06:21 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-06-17 14:06:21 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-06-17 14:06:21 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-06-17 14:06:21 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-06-17 14:06:21 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-06-17 14:06:21 --> Log Folder writable Component installed
+INFO  - 2013-06-17 14:06:21 --> Asset folders writable Component installed
+INFO  - 2013-06-17 14:06:21 --> Cache Folder writable Component installed
+INFO  - 2013-06-17 14:06:21 --> Config files writable Component installed
+INFO  - 2013-06-17 14:06:21 --> FileSystem Check Feature installed
+INFO  - 2013-06-17 14:06:21 --> Create new system config file Component installed
+INFO  - 2013-06-17 14:06:21 --> Create new database config file Component installed
+INFO  - 2013-06-17 14:06:21 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-06-17 14:06:21 --> Setup FileSystem Feature installed
+INFO  - 2013-06-17 14:06:21 --> Connect to database Component installed
+INFO  - 2013-06-17 14:06:27 --> Update table schema Component installed
+INFO  - 2013-06-17 14:06:27 --> Create administrator user account Component installed
+INFO  - 2013-06-17 14:06:27 --> Setup Database Feature installed
+INFO  - 2013-07-03 17:46:45 --> Base path set to: D:/xampp/htdocs/framework/momo/v3/
+INFO  - 2013-07-03 17:46:45 --> Base dir set to: /framework/momo/v3/
+INFO  - 2013-07-03 17:46:45 --> System path set to: D:/xampp/htdocs/framework/momo/v3/system/
+INFO  - 2013-07-03 17:46:45 --> Application path set to: D:/xampp/htdocs/framework/momo/v3/application/
+INFO  - 2013-07-03 17:46:45 --> Modules path set to: D:/xampp/htdocs/framework/momo/v3/core_modules/
+INFO  - 2013-07-03 17:46:45 --> Logs path set to: D:/xampp/htdocs/framework/momo/v3/application/logs/
+INFO  - 2013-07-03 17:46:45 --> Cache path set to: D:/xampp/htdocs/framework/momo/v3/application/cache/
+INFO  - 2013-07-03 17:46:45 --> New feature 'FileSystem Check' created
+INFO  - 2013-07-03 17:46:45 --> New feature 'Setup FileSystem' created
+INFO  - 2013-07-03 17:46:45 --> New feature 'Setup Database' created
+INFO  - 2013-07-03 17:46:45 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2013-07-03 17:46:45 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2013-07-03 17:46:46 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-07-03 17:46:46 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2013-07-03 17:46:46 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2013-07-03 17:46:46 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2013-07-03 17:46:46 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-07-03 17:46:46 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-07-03 17:46:46 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2013-07-03 17:46:46 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2013-07-03 17:46:46 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2013-07-03 17:46:46 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2013-07-03 17:46:46 --> Log Folder writable Component installed
+INFO  - 2013-07-03 17:46:46 --> Asset folders writable Component installed
+INFO  - 2013-07-03 17:46:46 --> Cache Folder writable Component installed
+INFO  - 2013-07-03 17:46:46 --> Config files writable Component installed
+INFO  - 2013-07-03 17:46:46 --> FileSystem Check Feature installed
+INFO  - 2013-07-03 17:46:46 --> Create new system config file Component installed
+INFO  - 2013-07-03 17:46:46 --> Create new database config file Component installed
+INFO  - 2013-07-03 17:46:46 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2013-07-03 17:46:46 --> Setup FileSystem Feature installed
+INFO  - 2013-07-03 17:46:46 --> Connect to database Component installed
+INFO  - 2013-07-03 17:46:53 --> Update table schema Component installed
+INFO  - 2013-07-03 17:46:53 --> Create administrator user account Component installed
+INFO  - 2013-07-03 17:46:53 --> Setup Database Feature installed
