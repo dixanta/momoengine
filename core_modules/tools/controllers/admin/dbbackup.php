@@ -45,14 +45,14 @@ class Dbbackup extends Admin_Controller
 		$this->load->helper('file');
 		$file=$this->preference->item('backup_path').'/'.$backup_file.'.zip';
 		write_file($file, $backup); 
-		$this->backup_model->insert('Backup',array('file'=>$file,'backup_date'=>date('Y-m-d H:i:s')));
+		$this->backup_model->insert('BACKUP',array('file'=>$file,'backup_date'=>date('Y-m-d H:i:s')));
 		echo json_encode(array('success'=>TRUE,'msg'=>'Backedup Successful'));
 		
 	}
 	
 	public function json()
 	{
-		$total=$this->backup_model->getBackups()->num_rows();
+		$total=$this->backup_model->count();
 		paging('backup_date desc');
 		$rows=$this->backup_model->getBackups()->result_array();
 		echo json_encode(array('total'=>$total,'rows'=>$rows));		
@@ -68,7 +68,7 @@ class Dbbackup extends Admin_Controller
 			$backup=$this->backup_model->getBackups(array('backup_id'=>$row))->row_array();
 			
 			@unlink($backup['file']);
-			$this->backup_model->delete('Backup',array('backup_id'=>$row));
+			$this->backup_model->delete('BACKUP',array('backup_id'=>$row));
             endforeach;
 		}
 	}
@@ -81,12 +81,4 @@ class Dbbackup extends Admin_Controller
 		$name = 'backup.sql.zip';
 		force_download($name, $data); 
 	}
-
-	public function install()
-	{
-		/*$sql='CREATE TABLE be_backup(backup_id int NOT NULL auto_increment PRIMARY KEY, file VARCHAR(255) NOT NULL,backup_date DATETIME NOT NULL)';
-		echo $this->db->query($sql);
-		$this->preference->set_item('backup_path','backups');*/
-	}
-		
 }

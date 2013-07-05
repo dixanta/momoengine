@@ -29,15 +29,9 @@ class Shortcut_model extends MY_Model
                     $this->db->join($this->_TABLES[$key]. ' ' .$this->_JOINS[$key]['alias'],$this->_JOINS[$key]['join_field'],$this->_JOINS[$key]['join_type']);
 		endforeach;	        
         
-		if( ! is_null($where))
-		{
-			$this->db->where($where);
-		}
+		(! is_null($where))?$this->db->where($where):NULL;
+		(! is_null($order_by))?$this->db->order_by($order_by):NULL;
 		
-		if(!is_null($order_by))
-		{
-			$this->db->order_by($order_by);
-		}
 		if( ! is_null($limit['limit']))
 		{
 			$this->db->limit($limit['limit'],( isset($limit['offset'])?$limit['offset']:''));
@@ -45,24 +39,17 @@ class Shortcut_model extends MY_Model
 		return $this->db->get();	    
     }
     
-    public function countShortcuts($where=NULL)
+    public function count($where=NULL)
     {
 		$this->db->select('count(*) as rows');
         $this->db->from($this->_TABLES['SHORTCUTS'].' shortcuts');
         
         foreach($this->joins as $key):
         $this->db->join($this->_TABLES[$key]. ' ' .$this->_JOINS[$key]['alias'],$this->_JOINS[$key]['join_field'],$this->_JOINS[$key]['join_type']);
-        endforeach;        
-        if( ! is_null($where))
-		{
-			$this->db->where($where);
-		}
-        $result=$this->db->get();
-        if($result->num_rows()>0)
-        {
-        	$row=$result->row_array();
-            return $row['rows'];
-        }
-        return 0;
+        endforeach;  
+		      
+       (! is_null($where))?$this->db->where($where):NULL;
+		
+        return $this->db->count_all_results();
     }
 }

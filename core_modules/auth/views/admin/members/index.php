@@ -12,13 +12,13 @@
 <td><label><?=lang('group')?></label>:</td>
 <td><input type="text" name="search[group]" id="search_group"  class="easyui-numberbox"/></td>
 <td><label><?=lang('active')?></label>:</td>
-<td><input type="radio" name="search[active]" id="search_active1"/><?=lang('general_yes')?>
-								<input type="radio" name="search[active]" id="search_active0"/><?=lang('general_no')?></td>
+<td><input type="radio" name="search[active]" id="search_active1" value="1"/><?=lang('general_yes')?>
+								<input type="radio" name="search[active]" id="search_active0"  value="0"/><?=lang('general_no')?></td>
 </tr>
   <tr>
     <td colspan="4">
-    <a href="#" class="easyui-linkbutton" id="search" iconCls="icon-search"><?=lang('search')?></a>  
-    <a href="#" class="easyui-linkbutton" id="clear" iconCls="icon-clear"><?=lang('clear')?></a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" id="search" iconCls="icon-search"><?=lang('search')?></a>  
+    <a href="javascript:void(0)" class="easyui-linkbutton" id="clear" iconCls="icon-clear"><?=lang('clear')?></a>
     </td>
     </tr>
 </table>

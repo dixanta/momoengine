@@ -101,11 +101,11 @@ class User_email
 		$config['useragent'] = "BackendPro";
 		$config['protocol'] = $this->CI->preference->item('email_protocol');
 		$config['mailpath'] = $this->CI->preference->item('email_mailpath');
-		/*$config['smtp_host'] = $this->CI->preference->item('smtp_host');
+		$config['smtp_host'] = $this->CI->preference->item('smtp_host');
 		$config['smtp_user'] = $this->CI->preference->item('smtp_user');
 		$config['smtp_pass'] = $this->CI->preference->item('smtp_pass');
 		$config['smtp_port'] = $this->CI->preference->item('smtp_port');
-		$config['smtp_timeout'] = $this->CI->preference->item('smtp_timeout');*/
+		$config['smtp_timeout'] = $this->CI->preference->item('smtp_timeout');
 		$config['wordwrap'] = $this->CI->preference->item('email_wordwrap');
 		$config['wrapchars'] = $this->CI->preference->item('email_wrapchars');
 		$config['mailtype'] = $this->CI->preference->item('email_mailtype');

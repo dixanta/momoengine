@@ -72,7 +72,15 @@ class Members extends Admin_Controller
 
 	public function _get_search_param()
 	{
-		// Search Param Goes Here
+		parse_str($this->input->post('data'),$params);
+		if(!empty($params['search']))
+		{
+			($params['search']['username']!='')?$this->db->like('username',$params['search']['username']):'';
+			($params['search']['email']!='')?$this->db->like('email',$params['search']['email']):'';
+			($params['search']['group']!='')?$this->db->like('group',$params['search']['group']):'';
+			(isset($params['search']['active']))?$this->db->where('active',$params['search']['active']):'';
+
+		} 
 	}
 
 	public function combo_json()
@@ -334,11 +342,21 @@ class Members extends Admin_Controller
 			$success=FALSE;
 			$this->load->library('email');			
 			$subject="Reply from " .site_url();
-			$config['charset'] = 'iso-8859-1';
-			$config['wordwrap'] = TRUE;
-			$config['mailtype'] = 'html';
-			$config['protocol'] = 'smtp';
-			$config['smtp_host'] = 'smtp.vianet.com.np';
+			
+			$config['protocol'] = $this->preference->item('email_protocol');
+			$config['mailpath'] = $this->preference->item('email_mailpath');
+			$config['smtp_host'] = $this->preference->item('smtp_host');
+			$config['smtp_user'] = $this->preference->item('smtp_user');
+			$config['smtp_pass'] = $this->preference->item('smtp_pass');
+			$config['smtp_port'] = $this->preference->item('smtp_port');
+			$config['smtp_timeout'] = $this->preference->item('smtp_timeout');
+			$config['wordwrap'] = $this->preference->item('email_wordwrap');
+			$config['wrapchars'] = $this->preference->item('email_wrapchars');
+			$config['mailtype'] = $this->preference->item('email_mailtype');
+			$config['charset'] = $this->preference->item('email_charset');
+			$config['bcc_batch_mode'] = $this->preference->item('bcc_batch_mode');
+			$config['bcc_batch_size'] = $this->preference->item('bcc_batch_size');
+			
 			$this->email->initialize($config);
 			$this->email->clear(TRUE);
 			$this->email->from($this->preference->item('automated_from_email'), $this->preference->item('automated_from_name'));

@@ -2,13 +2,14 @@
 
 class Shortcut extends Admin_Controller
 {
-	protected $uploadPath = 'assets/images/shortcut';
-protected $uploadthumbpath= 'assets/images/shortcut/thumb/';
+	protected $uploadPath = 'uploads/shortcut';
+	protected $uploadthumbpath= 'uploads/shortcut/thumb/';
 
 	public function __construct(){
     	parent::__construct();
         $this->load->module_model('tools','shortcut_model');
         $this->lang->module_load('tools','shortcut');
+		$this->bep_assets->load_asset('jquery.upload');
     }
     
 	public function index()
@@ -22,24 +23,12 @@ protected $uploadthumbpath= 'assets/images/shortcut/thumb/';
 
 	public function json()
 	{
-		$this->_get_search_param();	
-		$total=$this->shortcut_model->countShortcuts();
+		$total=$this->shortcut_model->count();
 		paging('shortcut_id');
-		$this->_get_search_param();	
 		$rows=$this->shortcut_model->getShortcuts()->result_array();
 		echo json_encode(array('total'=>$total,'rows'=>$rows));
 	}
-	
-	public function _get_search_param()
-	{
-		// Search Param Goes Here
-	}
 
-	public function combo_json()
-    {
-		$rows=$this->shortcut_model->getShortcuts()->result_array();
-		echo json_encode($rows);    	
-    }    
     
 	public function delete_json()
 	{

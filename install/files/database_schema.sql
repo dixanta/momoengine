@@ -189,11 +189,11 @@ INSERT INTO `be_preferences` (`name`, `value`) VALUES
 ('email_protocol', 'sendmail'),
 ('use_registration_captcha', '0'),
 ('page_debug', '0'),
-('automated_from_name', 'Easycms'),
+('automated_from_name', 'Momo Engine'),
 ('allow_user_registration', '1'),
 ('use_login_captcha', '0'),
-('site_name', 'Easycms'),
-('automated_from_email', 'noreply@easycms.com'),
+('site_name', 'Momo Engine Rapid Web Application Development Engine'),
+('automated_from_email', 'noreply@momoengine.com'),
 ('account_activation_time', '7'),
 ('allow_user_profiles', '0'),
 ('activation_method', 'email'),
@@ -211,6 +211,8 @@ INSERT INTO `be_preferences` (`name`, `value`) VALUES
 ('bcc_batch_mode', '0'),
 ('bcc_batch_size', '200'),
 ('login_field','email'),
+('meta_keywords','Momo Engine Fastest Web Application Development Engine'),
+('meta_description','Momo Engine Fastest Web Application Development Engine'),
 ('offline_message',''),
 ('theme','default'),
 ('site_status', '1'),
@@ -315,6 +317,20 @@ CREATE TABLE IF NOT EXISTS `ci_sessions` (
 --
 -- Dumping data for table `ci_sessions`
 -- --------------------------------------------------------
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `be_backups`
+--
+
+CREATE TABLE IF NOT EXISTS `be_backups` (
+  `backup_id` int(11) NOT NULL AUTO_INCREMENT,
+  `file` varchar(100) NOT NULL,
+  `backup_date` datetime NOT NULL,
+  PRIMARY KEY (`backup_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=
+
 
 -- --------------------------------------------------------
 

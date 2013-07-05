@@ -349,7 +349,7 @@ class MY_Router  extends CI_Router
             return $segments;
         }
 		
-/*		if(count($segments) == 1)
+		if(count($segments) == 1)
 		{
 			$row= $this->_get_db_route($segments[0]);
 		
@@ -372,7 +372,7 @@ class MY_Router  extends CI_Router
 				$this->_matchbox->set_module($route_data[0]);
 				 return $route_data;
 			}
-		}	*/
+		}	
         // {{{ Matchbox
 
         if ($this->_fail_gracefully) {

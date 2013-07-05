@@ -8,8 +8,8 @@
 </tr>
   <tr>
     <td colspan="4">
-    <a href="#" class="easyui-linkbutton" id="search" iconCls="icon-search"><?=lang('search')?></a>  
-    <a href="#" class="easyui-linkbutton" id="clear" iconCls="icon-clear"><?=lang('clear')?></a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" id="search" iconCls="icon-search"><?=lang('search')?></a>  
+    <a href="javascript:void(0)" class="easyui-linkbutton" id="clear" iconCls="icon-clear"><?=lang('clear')?></a>
     </td>
     </tr>
 </table>
@@ -31,15 +31,14 @@
 
 <div id="toolbar" style="padding:5px;height:auto">
     <p>
-    <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="false" onclick="create()" title="<?=lang('create_layout')?>"><?=lang('create')?></a>
-    <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" plain="false" onclick="removeSelected()"  title="<?=lang('delete_layout')?>"><?=lang('remove_selected')?></a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="false" onclick="create()" title="<?=lang('create_layout')?>"><?=lang('create')?></a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-cancel" plain="false" onclick="removeSelected()"  title="<?=lang('delete_layout')?>"><?=lang('remove_selected')?></a>
     </p>
 
 </div> 
 
 <!--for create and edit layout form-->
-<div id="dlg" class="easyui-window" style="width:auto;height:auto;padding:10px 20px"
-        closed="true" collapsible="true" buttons="#dlg-buttons">
+<div id="dlg" class="easyui-dialog" style="width:300px;height:auto;padding:10px 20px" data-options="closed:true,collapsible:true,modal:true,buttons:'#dlg-buttons'">
     <form id="form-layout" method="post" >
     <table>
 		<tr>
@@ -49,8 +48,8 @@
     </table>
     </form>
 	<div id="dlg-buttons">
-		<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()"><?= lang('save')?></a>
-		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').window('close')"><?= lang('cancel')?></a>
+		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()"><?= lang('save')?></a>
+		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').window('close')"><?= lang('cancel')?></a>
 	</div>    
 </div>
 <!--div ends-->
@@ -86,8 +85,8 @@
 	
 	function getActions(value,row,index)
 	{
-		var e = '<a href="#" onclick="edit('+index+')" class="easyui-linkbutton l-btn" iconcls="icon-edit"  title="<?=lang('edit_layout')?>"><span class="l-btn-left"><span style="padding-left: 20px;" class="l-btn-text icon-edit"></span></span></a>';
-		var d = '<a href="#" onclick="remove('+index+')" class="easyui-linkbutton l-btn" iconcls="icon-remove"  title="<?=lang('delete_layout')?>"><span class="l-btn-left"><span style="padding-left: 20px;" class="l-btn-text icon-cancel"></span></span></a>';
+		var e = '<a href="javascript:void(0)" onclick="edit('+index+')" class="easyui-linkbutton l-btn" iconcls="icon-edit"  title="<?=lang('edit_layout')?>"><span class="l-btn-left"><span style="padding-left: 20px;" class="l-btn-text icon-edit"></span></span></a>';
+		var d = '<a href="javascript:void(0)" onclick="remove('+index+')" class="easyui-linkbutton l-btn" iconcls="icon-remove"  title="<?=lang('delete_layout')?>"><span class="l-btn-left"><span style="padding-left: 20px;" class="l-btn-text icon-cancel"></span></span></a>';
 		return e+d;		
 	}
 	
