@@ -17,7 +17,6 @@
 </form>
 </div>
 <br/>
-<br/>
 <table id="page-table" pagination="true" title="<?=lang('page')?>" pagesize="20" rownumbers="true" toolbar="#toolbar" collapsible="true" fitColumns="true">
     <thead>
     <th field="checkbox" checkbox="true"></th>
@@ -37,11 +36,11 @@
 </div> 
 
 <!--for create and edit page form-->
-<div id="dlg" class="easyui-window" style="width:auto;height:auto;padding:10px 20px"
+<div id="dlg" class="easyui-dialog" style="width:600px;height:auto;padding:10px 20px"
         closed="true" collapsible="true" buttons="#dlg-buttons" modal="true">
     <form id="form-page" method="post">
                  <!-- to create tab format within the form--> 
-                <div id="page-tab" class="easyui-tabs" style="width:700px;height:auto">  
+                <div id="page-tab" class="easyui-tabs" style="width:550px;height:auto">  
                          <!-- 1st tab for blog details--> 
                     <div title="Page Details" style="padding:20px"> 
     <table>
@@ -67,8 +66,8 @@
      </div>  <!-- 2nd tab end--> 
                    
                     <div title="Meta Tags" style="overflow:auto;padding:20px;"> 
-                        <label>Meta Keywords:</label><textarea name="meta_keywords" style="width:650px"></textarea><br/>
-                        <label>Meta Description:</label><textarea name="meta_description"  style="width:650px"></textarea>
+                        <label>Meta Keywords:</label><textarea name="meta_keywords" style="width:500px"></textarea><br/>
+                        <label>Meta Description:</label><textarea name="meta_description"  style="width:500px"></textarea>
                     </div>
                 </div>  <!-- to create tab format within the form-->      
     </form>
