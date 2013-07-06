@@ -7,14 +7,14 @@
 		</ul>
 		
 		<div id="gc_settings">
-<?php
-echo $form;
-?>
+		<?php
+        echo $form;
+        ?>
 		</div>
 	</div>
 	<div class="button_set">
 		<input type="submit" value="<?php echo lang('general_save');?>"/>
-        <a href="<?php echo site_url('plugins/admin/module')?>">Back</a>
+        <a href="<?php echo site_url('plugins/admin/module')?>" class="easyui-linkbutton" iconCls="icon-back">Back</a>
 	</div>
 </form>
 </div>
