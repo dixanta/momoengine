@@ -111,7 +111,7 @@ class Auth_form_processing
 			// Display page
 			$data['header'] = $this->CI->lang->line('userlib_login');
 			$data['captcha'] = ($this->CI->preference->item('use_login_captcha')?$this->_generate_captcha():'');
-			$data['page'] =  'auth/form_login';
+			$data['view_page'] =  'auth/form_login';
 			$data['module'] = 'auth';
 			$this->CI->load->view($container,$data);
 
@@ -253,7 +253,7 @@ class Auth_form_processing
 
 			// Display page
 			$data['header'] = $this->CI->lang->line('userlib_forgotten_password');
-			$data['page'] =  'auth/form_forgotten_password';
+			$data['view_page'] =  'auth/form_forgotten_password';
 			$data['module'] = 'auth';
 			$this->CI->load->view($container,$data);
 
@@ -441,7 +441,7 @@ class Auth_form_processing
 			// Display page
 			$data['header'] = $this->CI->lang->line('userlib_register');
 			$data['captcha'] = ($this->CI->preference->item('use_registration_captcha')?$this->_generate_captcha():'');
-			$data['page'] =  'auth/form_register';
+			$data['view_page'] =  'auth/form_register';
 			$data['module'] = 'auth';
 			$this->CI->load->view($container,$data);
 		}
