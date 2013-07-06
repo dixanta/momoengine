@@ -1,5 +1,5 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed'); ?>
-<table class="list" id="module">
+<table width="100%" id="module">
           <thead>
             <tr>
               <td class="left">Limit:</td>
@@ -70,7 +70,7 @@
          <tfoot>
             <tr>
               <td colspan="6"></td>
-              <td class="left"><a class="button" onclick="addModule();">Add Module</a></td>
+              <td class="left"><a onclick="addModule();" class="easyui-linkbutton" iconCls="icon-add">Add Module</a></td>
             </tr>
           </tfoot>
         </table>
@@ -98,7 +98,7 @@ function addModule() {
     html += '      <option value="0">Disabled</option>';
     html += '    </select></td>';
 	html += '    <td class="right"><input type="text" name="slideshow_module[' + module_row + '][sort_order]" value="" size="3" /></td>';
-	html += '    <td class="left"><a onclick="$(\'#module-row' + module_row + '\').remove();" class="button">Remove</a></td>';
+	html += '    <td class="left"><a href="javascript:void(0)" onclick="$(\'#module-row' + module_row + '\').remove();" class="button">Remove</a></td>';
 	html += '  </tr>';
 	html += '</tbody>';
 	

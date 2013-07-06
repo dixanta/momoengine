@@ -2,7 +2,7 @@
 <div>
 <textarea id="welcome_text" name="welcome_text" style="width:500px;height:200px"><?php echo @$settings["welcome_text"] ?></textarea>
 </div>
-<table class="list" id="module">
+<table width="100%" id="module">
           <thead>
             <tr>
               <td class="left">Layout:</td>
@@ -69,60 +69,7 @@
             </tr>
           </tfoot>
         </table>
-<script type="text/javascript"><!--
-/*$(document).ready(function(){
-$('input[name=\'product\']').autocomplete({
-	delay: 0,
-	source: function(request, response) {
-		$.ajax({
-			type:'post',
-			url: '<?php // echo site_url('admin/products/autocomplete')?>',
-			data:{filter_name:encodeURIComponent(request.term)},
-			dataType: 'json',
-			success: function(json) {		
-				response($.map(json, function(item) {
-					return {
-						label: item.name,
-						value: item.product_id
-					}
-				}));
-			}
-		});
-	}, 
-	select: function(event, ui) {
-		$('#welcome-product' + ui.item.value).remove();
-		
-		$('#welcome-product').append('<div id="welcome-product' + ui.item.value + '">' + ui.item.label + '<img src="<?php echo base_url()?>assets/images/icons/color/cross.png" /><input type="hidden" value="' + ui.item.value + '" /></div>');
-
-		$('#welcome-product div:odd').attr('class', 'odd');
-		$('#welcome-product div:even').attr('class', 'even');
-		
-		data = $.map($('#welcome-product input'), function(element){
-			return $(element).attr('value');
-		});
-						
-		$('input[name=\'welcome_products\']').attr('value', data.join());
-					
-		return false;
-	},
-	focus: function(event, ui) {
-      	return false;
-   	}
-});
-
-$('#welcome-product div img').live('click', function() {
-	$(this).parent().remove();
-	
-	$('#welcome-product div:odd').attr('class', 'odd');
-	$('#welcome-product div:even').attr('class', 'even');
-
-	data = $.map($('#welcome-product input'), function(element){
-		return $(element).attr('value');
-	});
-					
-	$('input[name=\'welcome_product\']').attr('value', data.join());	
-});
-});*/
+<script>
 var module_row = <?php echo $module_row?>;
 
 function addModule() {	
@@ -145,7 +92,7 @@ function addModule() {
     html += '      <option value="0">Disabled</option>';
     html += '    </select></td>';
 	html += '    <td class="right"><input type="text" name="welcome_module[' + module_row + '][sort_order]" value="" size="3" /></td>';
-	html += '    <td class="left"><a onclick="$(\'#module-row' + module_row + '\').remove();" class="button">Remove</a></td>';
+	html += '    <td class="left"><a href="javascript:void(0)" onclick="$(\'#module-row' + module_row + '\').remove();" class="button">Remove</a></td>';
 	html += '  </tr>';
 	html += '</tbody>';
 	
