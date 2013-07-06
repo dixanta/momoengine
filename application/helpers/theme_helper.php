@@ -1,5 +1,11 @@
 <?php
 
+function theme_url()
+{
+	$CI=&get_instance();
+	return base_url().'themes/'.$CI->config->item('theme').'/' ;	
+}
+
 function theme_css($file_name)
 {
 	$CI=&get_instance();
