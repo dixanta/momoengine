@@ -10,7 +10,7 @@
   </tr>
   
 </table>
-<table class="list" id="module">
+<table id="module" width="100%" >
           <thead>
             <tr>
               <td class="left">Width x Height:</td>
@@ -71,7 +71,7 @@
                   <?php } ?>
                 </select></td>
               <td class="right"><input type="text" name="facebookpage_module[<?php echo $module_row; ?>][sort_order]" value="<?php echo $module['sort_order']; ?>" size="3" /></td>
-              <td class="left"><a onclick="$('#module-row<?php echo $module_row; ?>').remove();" class="button">Remove</a></td>
+              <td class="left"><a onclick="$('#module-row<?php echo $module_row; ?>').remove();" class="easyui-linkbutton" iconCls="icon-cancel">Remove</a></td>
             </tr>
           </tbody>
           <?php $module_row++; ?>
@@ -79,7 +79,7 @@
          <tfoot>
             <tr>
               <td colspan="6"></td>
-              <td class="left"><a class="button" onclick="addModule();">Add Module</a></td>
+              <td class="left"><a  onclick="addModule();" class="easyui-linkbutton" iconCls="icon-add">Add Module</a></td>
             </tr>
           </tfoot>
         </table>
@@ -108,7 +108,7 @@ function addModule() {
     html += '      <option value="0">Disabled</option>';
     html += '    </select></td>';
 	html += '    <td class="right"><input type="text" name="facebookpage_module[' + module_row + '][sort_order]" value="" size="3" /></td>';
-	html += '    <td class="left"><a onclick="$(\'#module-row' + module_row + '\').remove();" class="button">Remove</a></td>';
+	html += '    <td class="left"><a href="javascript:void(0)" onclick="$(\'#module-row' + module_row + '\').remove();"><span class="l-btn-left"><span class="l-btn-text icon-add" style="padding-left: 20px;">Remove</span></a></td>';
 	html += '  </tr>';
 	html += '</tbody>';
 	
