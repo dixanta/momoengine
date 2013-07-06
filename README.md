@@ -7,3 +7,9 @@ INSTALLATION
 ============
 To install Momo Engine, copy the contents of this folder to a web accessible folder and browse to the install folder. 
 Next, follow the directions on the screen. 
+
+TEAM
+===========
+    Dixanta Bahadur Shrestha (Miracle Interface)
+    Special Thanks to Adam Price for Backendpro (http://www.kaydoo.co.uk/category/backendpro)
+
