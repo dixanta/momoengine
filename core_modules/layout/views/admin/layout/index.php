@@ -17,7 +17,6 @@
 </form>
 </div>
 <br/>
-<br/>
 <table id="layout-table" pagination="true" title="<?=lang('layout')?>" pagesize="20" rownumbers="true" toolbar="#toolbar" collapsible="true"
 			 fitColumns="true">
     <thead>
@@ -77,8 +76,7 @@
 			width:'auto',
 			onDblClickRow:function(index,row)
 			{
-			$('#form-layout').form('load',row);
-			$('#dlg').window('open').window('setTitle','<?=lang('edit_layout')?>');
+				edit(index);
 			}
 		});
 	});

@@ -5,20 +5,19 @@
     <thead>
     <th field="checkbox" checkbox="true"></th>
     <th field="shortcut_id" sortable="true" width="30"><?=lang('shortcut_id')?></th>
-<th field="name" sortable="true" width="50"><?=lang('name')?></th>
-<th field="image" sortable="true" width="50"><?=lang('image')?></th>
-<th field="new_window" sortable="true" width="50"><?=lang('new_window')?></th>
-<th field="added_date" sortable="true" width="50"><?=lang('added_date')?></th>
-<th field="status" sortable="true" width="30" align="center" formatter="formatStatus"><?=lang('status')?></th>
-
+    <th field="name" sortable="true" width="50"><?=lang('name')?></th>
+    <th field="image" sortable="true" width="50"><?=lang('image')?></th>
+    <th field="new_window" sortable="true" width="50"><?=lang('new_window')?></th>
+    <th field="added_date" sortable="true" width="50"><?=lang('added_date')?></th>
+    <th field="status" sortable="true" width="30" align="center" formatter="formatStatus"><?=lang('status')?></th>
     <th field="action" width="100" formatter="getActions"><?=lang('action')?></th>
     </thead>
 </table>
 
 <div id="toolbar" style="padding:5px;height:auto">
     <p>
-    <a href="#" class="easyui-linkbutton" iconCls="icon-add" plain="false" onclick="create()" title="<?=lang('create_shortcut')?>"><?=lang('create')?></a>
-    <a href="#" class="easyui-linkbutton" iconCls="icon-cancel" plain="false" onclick="removeSelected()"  title="<?=lang('delete_shortcut')?>"><?=lang('remove_selected')?></a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="false" onclick="create()" title="<?=lang('create_shortcut')?>"><?=lang('create')?></a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-cancel" plain="false" onclick="removeSelected()"  title="<?=lang('delete_shortcut')?>"><?=lang('remove_selected')?></a>
     </p>
 
 </div> 
@@ -49,8 +48,8 @@
     </table>
     </form>
 	<div id="dlg-buttons">
-		<a href="#" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()"><?= lang('general_save')?></a>
-		<a href="#" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').window('close')"><?= lang('general_cancel')?></a>
+		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-ok" onClick="save()"><?= lang('general_save')?></a>
+		<a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-cancel" onClick="javascript:$('#dlg').window('close')"><?= lang('general_cancel')?></a>
 	</div>    
 </div>
 <!--div ends-->
@@ -78,8 +77,7 @@
 			width:'auto',
 			onDblClickRow:function(index,row)
 			{
-			$('#form-shortcut').form('load',row);
-			$('#dlg').window('open').window('setTitle','<?=lang('edit_shortcut')?>');
+				edit(index);
 			}
 		});
 	});
