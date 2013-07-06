@@ -69,8 +69,7 @@
 			width:'auto',
 			onDblClickRow:function(index,row)
 			{
-			$('#form-{VIEWTABLE}').form('load',row);
-			$('#dlg').window('open').window('setTitle','{PHP_START} echo lang('edit_{VIEWTABLE}'){PHP_END}');
+				edit(index);
 			}
 		});
 	});

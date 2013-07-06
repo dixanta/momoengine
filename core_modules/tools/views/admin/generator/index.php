@@ -5,18 +5,23 @@
 <label>Table Prefix</label>
 <input type="text" name="prefix" id="prefix"/><br/>
 
-<label>Discard Fields</label>
+<label>Discard Fields (Define Fields in Comma Seperated format)</label>
 <textarea name="discard" id="discard" style="width:100%;height:100px" class="easyui-validatebox" required="true"></textarea>
-(Define Fields in Comma Seperated format)<br/>
+<br/>
 <label>Languages</label>
-<input name="language[]" type="checkbox" id="language[]" value="english" checked="checked"/>English 
-<input name="language[]" type="checkbox" id="language[]" value="japanese" />Japanese<br/>
+<input name="language[]" type="checkbox"  value="english" checked="checked"/>English 
+<input name="language[]" type="checkbox" value="japanese" />Japanese
+<input name="language[]" type="checkbox" value="spanish" />Spanish
+<input name="language[]" type="checkbox" value="french" />French
+<input name="other_language" type="text" value=""/>(Other Language Use Comma if you want to generate multiple language Files)
+<br/>
+
 <input type="checkbox" id="check_all" value="1"/>Check/Uncheck All
 <ul>
 <?php
 foreach($tables as $table):
 ?>
-<li><input type="checkbox" name="tables[]" id="<?php echo $table?>" value="<?php echo $table?>"/>
+<li><input type="checkbox" name="tables[]" id="<?php echo $table?>" value="<?php echo $table?>" class="tables"/>
 <a href="javascript:void()" onclick="getFields('<?php echo $table?>')"><?php echo $table?></a></li>
 <?php
 endforeach;
@@ -29,7 +34,7 @@ endforeach;
 </div>
 <script>
 $(function(){
-	$('#check_all').live('click',function(){
+	$('#check_all').on('click',function(){
 		var checked=false;
 		if($(this).is(':checked'))
 		{
@@ -45,6 +50,16 @@ $(function(){
 });
 function generate()
 {
+	var checked=false;
+	$.each($('.tables'),function(i,o){
+		if($(this).is(':checked')){
+			checked=true;
+		}
+	});
+	if(!checked){
+		$.messager.alert('Error','Please Select any table');
+		return false;
+	}
 	$.ajax({url:'<?php echo site_url('tools/admin/generator/generate')?>',type:'post',data:$('#form-generator').serialize(),dataType:'html',success:function(data){
 		$('#results').html(data);
 	}

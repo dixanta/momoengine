@@ -6,6 +6,7 @@ class Generator extends Admin_Controller
 	var $table_columns=NULL;
 	var $module_path='modules';
 	var $module_name;
+	var $languages=array();
 
 	var $discard=array();
 	public function __construct()
@@ -45,6 +46,7 @@ class Generator extends Admin_Controller
 		$tables[]='be_shortcuts';
 		$tables[]='be_user_profiles';
 		$tables[]='be_users';	
+		$tables[]='be_backups';	
 		$tables[]='ci_sessions';	
 		$tables[]='layouts';	
 		$tables[]='pages';	
@@ -183,7 +185,15 @@ class Generator extends Admin_Controller
 		@mkdir($this->view_admin_directory);	// Create Admin View Folder			
 
 
-		foreach($this->input->post('language') as $lang):
+		$this->languages=$this->input->post('language');
+		$other_language=$this->input->post('other_language');
+		if($other_language)
+		{
+			$other=explode(',',$other_language);
+			$this->languages=array_merge($this->languages,$other);
+		}
+		
+		foreach($this->languages as $lang):
 			$language_path=$this->language_directory.$lang.'/';
 			@mkdir($language_path);	// Create language Folder	
 		endforeach;		
@@ -211,10 +221,17 @@ class Generator extends Admin_Controller
 		$lang_array=array('PHP_TAG'=>'<?php','LANG'=>$lang,'TABLE_NAME'=>$file,'CAP_TABLE_NAME'=>humanize($file_name));
 		$lang_data=$this->parser->parse('templates/language.tpl',$lang_array,TRUE);
 		
-
-		foreach($this->input->post('language') as $lang):
+		/*$languages=$this->input->post('language');
+		$other_language=$this->input->post('other_language');
+		if($other_language)
+		{
+			$other=explode(',',$other_language);
+			$languages=array_merge($languages,$other);
+		}*/
 		
-			$new_lang_path=$this->language_directory.$lang.'/'; 
+		foreach($this->languages as $lang):
+		
+			$new_lang_path=$this->language_directory.trim($lang).'/'; 
 			
 			$lang_file=$new_lang_path.$file.'_lang.php';
 			write_file($lang_file,$lang_data);
