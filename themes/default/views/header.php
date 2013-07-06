@@ -74,7 +74,9 @@
             <?php
 				}else{
 			?>
-            <span  class="pull-right" style="color:#fff;font-weight:bold">Welcome <?php echo $this->session->userdata('username')?>  <a href="<?php echo site_url('auth/logout')?>">Logout</a></span>
+            <p class="navbar-text pull-right">
+              Logged in as <a href="#" class="navbar-link"><?php echo $this->session->userdata('username')?> </a> <a href="<?php echo site_url('auth/logout')?>">Logout</a></span>
+            </p>           
             <?php
 				}
 			?>
