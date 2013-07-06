@@ -25,7 +25,7 @@ class Contact extends Public_Controller {
 		if($this->form_validation->run()===FALSE)
 		{
 			$data['header'] = 'Contact Us';
-			$data['page'] = "contact/index";
+			$data['view_page'] = "contact/index";
 			$data['captcha'] = $this->_generate_captcha();
 			$this->load->view($this->_container,$data);	
 		}

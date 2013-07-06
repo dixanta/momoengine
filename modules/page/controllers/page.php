@@ -25,14 +25,14 @@ class Page extends Public_Controller
 		// Display Page
 		$data['header'] = $detail['page_title'];
 		$data['detail'] = $detail;
-		$data['page'] =  'page/index';
+		$data['view_page'] =  'page/index';
 		$this->load->view($this->_container,$data);
 	}
 	
 	public function faq()
 	{
 		$data['header'] = 'faq';
-		$data['page'] =  'page/faq';
+		$data['view_page'] =  'page/faq';
 		$this->load->view($this->_container,$data);		
 	}
 }
