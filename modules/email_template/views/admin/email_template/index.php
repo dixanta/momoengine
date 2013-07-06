@@ -103,8 +103,7 @@
 			width:'auto',
 			onDblClickRow:function(index,row)
 			{
-			$('#form-email_template').form('load',row);
-			$('#dlg').window('open').window('setTitle','<?=lang('edit_email_template')?>');
+				edit(index);
 			}
 		});
 	});
