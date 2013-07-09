@@ -51,7 +51,7 @@ class Page extends Admin_Controller
 		if($id && is_array($id))
 		{
         	foreach($id as $row):
-				$this->page_model->update('PAGES',$data,array('page_id'=>$row));
+				$this->page_model->delete('PAGES',array('page_id'=>$row));
             endforeach;
 		}
 	}    

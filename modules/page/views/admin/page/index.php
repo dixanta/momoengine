@@ -131,7 +131,7 @@
 	function getActions(value,row,index)
 	{
 		var e = '<a href="#" onclick="edit('+index+')" class="easyui-linkbutton l-btn" iconcls="icon-edit"  title="<?=lang('edit_page')?>"><span class="l-btn-left"><span style="padding-left: 20px;" class="l-btn-text icon-edit"></span></span></a>';
-		var d = '<a href="#" onclick="remove('+index+')" class="easyui-linkbutton l-btn" iconcls="icon-remove"  title="<?=lang('delete_page')?>"><span class="l-btn-left"><span style="padding-left: 20px;" class="l-btn-text icon-cancel"></span></span></a>';
+		var d = '<a href="#" onclick="removePage('+index+')" class="easyui-linkbutton l-btn" iconcls="icon-remove"  title="<?=lang('delete_page')?>"><span class="l-btn-left"><span style="padding-left: 20px;" class="l-btn-text icon-cancel"></span></span></a>';
 		return e+d;		
 	}
 	
@@ -188,7 +188,7 @@
 	}
 	
 		
-	function remove(index)
+	function removePage(index)
 	{
 		$.messager.confirm('Confirm','<?=lang('delete_confirm')?>',function(r){
 			if (r){
