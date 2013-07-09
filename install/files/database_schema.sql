@@ -329,7 +329,7 @@ CREATE TABLE IF NOT EXISTS `be_backups` (
   `file` varchar(100) NOT NULL,
   `backup_date` datetime NOT NULL,
   PRIMARY KEY (`backup_id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=1;
 
 
 -- --------------------------------------------------------
