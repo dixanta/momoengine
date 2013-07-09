@@ -37,7 +37,7 @@ function easyui_combobox($obj,$key,$options=array())
 
 ?>		
 	$('#<?=$obj?>').combobox(<?=json_encode($combo_settings)?>);		
-<?		
+<?php		
 }
 
 function easyui_combobox_localdata($obj,$key,$data)
@@ -125,5 +125,5 @@ function tinymce($obj,$config=array())
 		});
         
   
-<?			
+<?php		
 	}	
