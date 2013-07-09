@@ -67,7 +67,7 @@
                 if(!is_user()){
             ?>            
             <form class="navbar-form pull-right" action="<?php echo site_url('auth/login')?>" method="post">
-              <input class="span2" type="text" name="login_field" placeholder="Email">
+              <input class="span2" type="text" name="login_field" placeholder="Username/Email">
               <input class="span2" type="password" name="password" placeholder="Password">
               <button type="submit" class="btn">Sign in</button>
             </form>
