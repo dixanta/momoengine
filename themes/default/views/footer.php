@@ -1,5 +1,5 @@
       <footer>
-        <p>&copy; Company 2013</p>
+        <p>&copy; Powered By <a href="http://momoengine.com" target="_blank">Momo Engine</a> <?php echo date('Y')?></p>
       </footer>
 
     </div> <!-- /container -->
