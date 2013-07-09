@@ -210,7 +210,7 @@ INSERT INTO `be_preferences` (`name`, `value`) VALUES
 ('email_charset', 'utf-8'),
 ('bcc_batch_mode', '0'),
 ('bcc_batch_size', '200'),
-('login_field','email'),
+('login_field','both'),
 ('meta_keywords','Momo Engine Fastest Web Application Development Engine'),
 ('meta_description','Momo Engine Fastest Web Application Development Engine'),
 ('offline_message',''),
