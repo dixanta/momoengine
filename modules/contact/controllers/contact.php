@@ -17,8 +17,6 @@ class Contact extends Public_Controller {
 	{
 		$this->form_validation->set_rules('name','Name','trim|required');
 		$this->form_validation->set_rules('email','Email','trim|required|email');
-		$this->form_validation->set_rules('mobile','Mobile','trim');
-		$this->form_validation->set_rules('subject','Subject','trim|required');
 		$this->form_validation->set_rules('message','Message','trim|required');	
 		//$this->form_validation->set_rules('recaptcha_response_field','Recaptcha','trim|required|callback_valid_captcha');
 		
@@ -63,6 +61,7 @@ class Contact extends Public_Controller {
 			$this->email->message($message);
 			$this->email->send();		
 	}
+	
 	private function _generate_captcha()
 	{
 		$this->bep_assets->load_asset('recaptcha');
