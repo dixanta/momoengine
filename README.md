@@ -10,6 +10,10 @@ Next, follow the directions on the screen.
 
 TEAM
 ===========
-    Dixanta Bahadur Shrestha (Miracle Interface)
+    Dixanta Bahadur Shrestha (Co-Founder Pagoda Labs)
+    Rubim Shrestha 
+    Anup Shakya
+    Bipen Chhetri
+    Sudishna Sthapit
     Special Thanks to Adam Price for Backendpro (http://www.kaydoo.co.uk/category/backendpro)
 
