@@ -142,7 +142,7 @@ $config['asset'][] = array('file'=>'jquery.nicescroll.js', 'needs'=>'jquery');
  * Where <asset_n> is the name of the asset file specified in the array above.
  */
 $config['asset_group']['SITE'] = 'jquery';
-$config['asset_group']['PUBLIC'] = 'FlashStatus';
+$config['asset_group']['PUBLIC'] = '';
 $config['asset_group']['COLORBOX'] = 'jquery.colorbox';
 
 $config['asset_group']['ADMIN'] = 'reset|typography|bep_admin_style|bep_admin_layout|FlashStatus|buttons|bep_navigation|treeview|bep_icons|bep_select_all';

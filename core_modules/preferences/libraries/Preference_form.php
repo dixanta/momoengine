@@ -260,6 +260,7 @@ class Preference_form
 		$params['name'] = $key;
 		$params['id'] = $key;
 		$params['class'] = 'text';
+		$params['style'] = 'width:250px';
 		$params['value'] = $this->CI->validation->{$key};
 		return form_input($params);
 	}
@@ -290,7 +291,7 @@ class Preference_form
 	{
 		$options = $this->field[$key]['params']['options'];
 		unset($this->field[$key]['params']['options']);
-		return form_dropdown($key,$options,$this->CI->validation->{$key},$this->field[$key]['params']);
+		return form_dropdown($key,$options,$this->CI->validation->{$key});
 	}
 
 	function _field_textarea($key)
@@ -301,6 +302,8 @@ class Preference_form
 		$params['value'] = $this->CI->validation->{$key};
 		return form_textarea($params);
 	}
+	
+
 }
 
 /* End of file Preference_form.php */
