@@ -29,11 +29,11 @@ class Public_Controller extends Site_Controller{
 			exit;
 		}
 		$this->load->module_model('plugins','settings_model');
-//		$this->load->module_model('layout','layout_model');
+		$this->load->module_model('layout','layout_model');
 		$this->load->module_model('slug','slug_model');	
 
-	//	$this->_loadPackages();			
-	//	$this->getLayoutBlocks('Default');
+		$this->_loadPackages();			
+		$this->getLayoutBlocks('Default');
 		// Load the PUBLIC asset group
 		$this->bep_assets->load_asset_group('PUBLIC');
 		log_message('debug','BackendPro : Public_Controller class loaded');		

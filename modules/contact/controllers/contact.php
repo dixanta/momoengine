@@ -6,10 +6,7 @@ class Contact extends Public_Controller {
 		parent::__construct();	
 		$this->load->helper(array('form','date','url'));
         $this->load->library('form_validation');
-		$this->load->library('email');
-		$this->bep_site->set_crumb('Home','');
-		$this->bep_site->set_crumb('Contact','contact');
-		
+		$this->getLayoutBlocks('Contact');		
 		
 	}
 	
@@ -41,6 +38,8 @@ class Contact extends Public_Controller {
 	
 	function _send_mail()
 	{
+			$this->load->library('email');
+
 			$subject="Contact from :: " .$this->input->post('name');
 
 			$message="The following person has contacted";
@@ -52,6 +51,8 @@ class Contact extends Public_Controller {
 			$config['charset'] = 'iso-8859-1';
 			$config['wordwrap'] = TRUE;
 			$config['mailtype'] = 'html';
+			$config['protocol'] = 'smtp';
+			$config['smtp_host'] = 'smtp.ntc.net.np';
 			$this->email->initialize($config);
 			$this->email->clear(TRUE);
 			$this->email->from($this->preference->item('automated_from_email'), $this->preference->item('automated_from_name'));

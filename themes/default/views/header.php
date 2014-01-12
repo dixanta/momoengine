@@ -48,7 +48,8 @@
           <div class="nav-collapse collapse">
             <ul class="nav">
               <li class="active"><a href="<?php echo site_url()?>">Home</a></li>
-              <li><a href="#about">About</a></li>
+              <li><a href="#about" data-toggle="modal">About</a></li>
+              
               <li><a href="<?php echo site_url('contact')?>">Contact</a></li>
             </ul>
 			<?php
@@ -87,4 +88,16 @@
       </div>
     </div>
 
+        <div id="about" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel">About</h3>
+        </div>
+        <div class="modal-body">
+        <p>Momo Engine About Content Can goes here</p>
+        </div>
+        <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+        </div>
+        </div>
     <div class="container">
