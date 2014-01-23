@@ -255,9 +255,9 @@ class Generator extends Admin_Controller
 	{
 		
 		$cols='';
-		foreach($fields as $field):
-			if(!in_array($field->name,$this->discard))
-				$cols=$cols."\$data['".$field->name."'] = \$this->input->post('".$field->name."');\r\n";
+		foreach($fields as $row):
+			if(($this->input->post('discard_post') && !in_array($row->name,$this->discard)) || (in_array($row->name,$this->discard) && !$this->input->post('discard_post')) || (!$this->input->post('discard_post') && !in_array($row->name,$this->discard))) 
+				$cols=$cols."\$data['".$row->name."'] = \$this->input->post('".$row->name."');\r\n";
 			
 		endforeach;
 		return $cols;
@@ -311,22 +311,23 @@ class Generator extends Admin_Controller
 		//print_r($fields);
 		//exit;
 		foreach($fields as $row):
-			if(!in_array($row->name,$this->discard)){
+			if(($this->input->post('discard_grid') && !in_array($row->name,$this->discard)) || (in_array($row->name,$this->discard) && !$this->input->post('discard_grid')) || (!$this->input->post('discard_grid') && !in_array($row->name,$this->discard))) 
+			{
 				if(strpos($row->name,'status')!==FALSE ||strpos($row->name,'active')!==FALSE)
 				{
-				$cols=$cols."<th field=\"".$row->name."\" sortable=\"true\" width=\"30\" align=\"center\" formatter=\"formatStatus\"><?=lang('".$row->name."')?></th>\r\n";
+				$cols=$cols."<th data-options=\"field:'".$row->name."',sortable:true,formatter:formatStatus\" width=\"30\" align=\"center\"><?php echo lang('".$row->name."')?></th>\r\n";
 					
 				}
 				else
 				{
 					if($row->primary_key=='1')
 					{
-						$cols=$cols."<th field=\"".$row->name."\" sortable=\"true\" width=\"30\"><?=lang('".$row->name."')?></th>\r\n";
+						$cols=$cols."<th data-options=\"field:'".$row->name."',sortable:true\" width=\"30\"><?php echo lang('".$row->name."')?></th>\r\n";
 						
 					}
 					else if(!preg_match('/text/is',$row->type,$match))
 					{
-						$cols=$cols."<th field=\"".$row->name."\" sortable=\"true\" width=\"50\"><?=lang('".$row->name."')?></th>\r\n";
+						$cols=$cols."<th data-options=\"field:'".$row->name."',sortable:true\" width=\"50\"><?php echo lang('".$row->name."')?></th>\r\n";
 					}
 				}
 			}
@@ -337,36 +338,44 @@ class Generator extends Admin_Controller
 	
 	private function _generate_search_fields($fields)
 	{
+		
+
+		
+//		 && (in_array($row->name,$this->discard) && $this->input->post('discard_search'))
 		$cols='<tr>';
 		$i=2;
 		foreach($fields as $row):
-			if($row->primary_key!='1' && !in_array($row->name,$this->discard))
+			if($row->primary_key!='1' )
+			{
+				if(($this->input->post('discard_search') && !in_array($row->name,$this->discard)) || (in_array($row->name,$this->discard) && !$this->input->post('discard_search')) || (!$this->input->post('discard_search') && !in_array($row->name,$this->discard))) 
 			{
 				
-				if(!preg_match('/text/is',$row->type,$match) && !preg_match('/image/is',$row->name,$match))
-				{
-					$cols=$cols."<td><label><?=lang('".$row->name."')?></label>:</td>\r\n";
-					if(preg_match('/date/',$row->type,$match)){
-						$cols=$cols."<td><input type=\"text\" name=\"date[".$row->name."][from]\" id=\"search_".$row->name."_from\"  class=\"easyui-datebox\"/> ~ <input type=\"text\" name=\"date[".$row->name."][to]\" id=\"search_".$row->name."_to\"  class=\"easyui-datebox\"/></td>\r\n";							
-					}
-					else if(!preg_match('/tinyint/',$row->type,$match)){
-						$cols=$cols."<td><input type=\"text\" name=\"search[".$row->name."]\" id=\"search_".$row->name."\"  class=\"".$this->_field_class($row->type)."\"/></td>\r\n";	
-					}
-					else
+					if(!preg_match('/text/is',$row->type,$match) && !preg_match('/image/is',$row->name,$match))
 					{
-						$cols=$cols."<td><input type=\"radio\" name=\"search[".$row->name."]\" id=\"search_".$row->name."1\" value=\"1\"/><?=lang('general_yes')?>
-								<input type=\"radio\" name=\"search[".$row->name."]\" id=\"search_".$row->name."0\" value=\"0\"/><?=lang('general_no')?></td>\r\n";	
-
-
+						$cols=$cols."<td><label><?php echo lang('".$row->name."')?></label>:</td>\r\n";
+						if(preg_match('/date/',$row->type,$match)){
+							$cols=$cols."<td><input type=\"text\" name=\"date[".$row->name."][from]\" id=\"search_".$row->name."_from\"  class=\"easyui-datebox\"/> ~ <input type=\"text\" name=\"date[".$row->name."][to]\" id=\"search_".$row->name."_to\"  class=\"easyui-datebox\"/></td>\r\n";							
+						}
+						else if(!preg_match('/tinyint/',$row->type,$match)){
+							$cols=$cols."<td><input type=\"text\" name=\"search[".$row->name."]\" id=\"search_".$row->name."\"  class=\"".$this->_field_class($row->type)."\"/></td>\r\n";	
+						}
+						else
+						{
+							$cols=$cols."<td><input type=\"radio\" name=\"search[".$row->name."]\" id=\"search_".$row->name."1\" value=\"1\"/><?php echo lang('general_yes')?>
+									<input type=\"radio\" name=\"search[".$row->name."]\" id=\"search_".$row->name."0\" value=\"0\"/><?php echo lang('general_no')?></td>\r\n";	
+	
+	
+						}
+					if(($i%4)==0)
+					{
+						$cols=$cols."</tr>\r\n<tr>\r\n";
 					}
-				if(($i%4)==0)
-				{
-					$cols=$cols."</tr>\r\n<tr>\r\n";
-				}
-				echo $i=$i+2;	
-
-				}
+					echo $i=$i+2;	
+	
+					}
+				
 			}
+			} // if ! primary key
 		endforeach;
 		$cols=$cols.'</tr>';	
 		return $cols;	
@@ -378,11 +387,14 @@ class Generator extends Admin_Controller
 		$cols='';
 
 		foreach($fields as $row):
-		if($row->name!=$primary_key && !in_array($row->name,$this->discard)):
+		if($row->name!=$primary_key):
+		
+		if(($this->input->post('discard_form') && !in_array($row->name,$this->discard)) || (in_array($row->name,$this->discard) && !$this->input->post('discard_form')) || (!$this->input->post('discard_form') && !in_array($row->name,$this->discard))) 
+			{
 	
 	
          $cols=$cols.'<tr>
-		              <td width="34%" ><label><?=lang(\'%%FIELD%%\')?>:</label></td>
+		              <td width="34%" ><label><?php echo lang(\'%%FIELD%%\')?>:</label></td>
 					  <td width="66%">';
 			
 			$field=	'<input name="%%FIELD%%" id="%%FIELD%%" class="'.$this->_field_class($row->type).'" required="true">';
@@ -401,7 +413,7 @@ class Generator extends Admin_Controller
 			}
 			elseif(preg_match('/tinyint/',$row->type,$match))
 			{
-				$field=	'<input type="radio" value="1" name="%%FIELD%%" id="%%FIELD%%1" /><?=lang("general_yes")?> <input type="radio" value="0" name="%%FIELD%%" id="%%FIELD%%0" /><?=lang("general_no")?>';				
+				$field=	'<input type="radio" value="1" name="%%FIELD%%" id="%%FIELD%%1" /><?php echo lang("general_yes")?> <input type="radio" value="0" name="%%FIELD%%" id="%%FIELD%%0" /><?php echo lang("general_no")?>';				
 			}
 			
 			$cols.=$field;
@@ -410,7 +422,7 @@ class Generator extends Admin_Controller
 		$cols.='</td>
 		       </tr>';    	
 		$cols=str_replace('%%FIELD%%',$row->name,$cols);
-			
+			}
 		endif;
 		endforeach;
 		$cols=$cols.'<input type="hidden" name="'.$primary_key.'" id="'.$primary_key.'"/>';

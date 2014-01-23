@@ -6,8 +6,8 @@
 {SEARCH_FIELDS}
   <tr>
     <td colspan="4">
-    <a href="#" class="easyui-linkbutton" id="search" iconCls="icon-search">{PHP_START} echo lang('search'){PHP_END}</a>  
-    <a href="#" class="easyui-linkbutton" id="clear" iconCls="icon-clear">{PHP_START} echo lang('clear'){PHP_END}</a>
+    <a href="javascript:void(0)" class="easyui-linkbutton" id="search" data-options="iconCls:'icon-search'">{PHP_START} echo lang('search'){PHP_END}</a>  
+    <a href="javascript:void(0)" class="easyui-linkbutton" id="clear" data-options="iconCls:'icon-clear'">{PHP_START} echo lang('clear'){PHP_END}</a>
     </td>
     </tr>
 </table>
@@ -17,7 +17,7 @@
 <br/>
 <table id="{VIEWTABLE}-table" data-options="pagination:true,title:'{PHP_START} echo lang('{TABLE_NAME}'){PHP_END}',pagesize:'20', rownumbers:true,toolbar:'#toolbar',collapsible:true,fitColumns:true">
     <thead>
-    <th field="checkbox" checkbox="true"></th>
+    <th data-options="field:'checkbox',checkbox:true"></th>
     {TABLE_FIELDS}
     <th field="action" width="100" formatter="getActions">{PHP_START} echo lang('action'){PHP_END}</th>
     </thead>

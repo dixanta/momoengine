@@ -6,7 +6,11 @@
 <input type="text" name="prefix" id="prefix"/><br/>
 
 <label>Discard Fields (Define Fields in Comma Seperated format)</label>
-<textarea name="discard" id="discard" style="width:100%;height:100px" class="easyui-validatebox" required="true"></textarea>
+<input name="discard_search" type="checkbox" value="search" checked="checked"/>Search Bar
+<input name="discard_grid" type="checkbox" value="grid" checked="checked"/>Grid 
+<input name="discard_form" type="checkbox" value="form" checked="checked"/>Form 
+<input name="discard_post" type="checkbox" value="post" checked="checked"/>Post Back 
+<textarea name="discard" id="discard" style="width:100%;height:100px" class="easyui-validatebox"></textarea>
 <br/>
 <label>Languages</label>
 <input name="language[]" type="checkbox"  value="english" checked="checked"/>English 
