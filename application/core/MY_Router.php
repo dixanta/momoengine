@@ -355,6 +355,12 @@ class MY_Router  extends CI_Router
 		
 			if(!empty($row))
 			{
+
+
+                //$segments = array_slice($segments, 1);
+
+                //return $segments;
+								
 				$this->_matchbox->set_directory('../modules');
 				$route_data=explode('/', $row['route']);
 				$this->_matchbox->set_module($route_data[0]);

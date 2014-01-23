@@ -36,3 +36,5 @@
 .navbar {
 	width:auto;margin-top:5px; float:left;
 }
+
+.pagination table tbody tr td{padding:0px !important}
