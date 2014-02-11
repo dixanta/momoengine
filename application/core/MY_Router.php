@@ -352,15 +352,9 @@ class MY_Router  extends CI_Router
 		if(count($segments) == 1)
 		{
 			$row= $this->_get_db_route($segments[0]);
-		
+
 			if(!empty($row))
 			{
-
-
-                //$segments = array_slice($segments, 1);
-
-                //return $segments;
-								
 				$this->_matchbox->set_directory('../modules');
 				$route_data=explode('/', $row['route']);
 				$this->_matchbox->set_module($route_data[0]);
@@ -370,7 +364,7 @@ class MY_Router  extends CI_Router
 		if(count($segments) == 2)
 		{
 			$row= $this->_get_db_route($segments[1]);
-		
+
 			if(!empty($row))
 			{
 				$this->_matchbox->set_directory('../modules');
