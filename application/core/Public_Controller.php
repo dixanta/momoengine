@@ -42,21 +42,44 @@ class Public_Controller extends Site_Controller{
 	protected function getBlocks($layout_id,$position)
 	{
 		$blocks=array();
-		foreach($this->extensions as $key=>$value):
-			$settings=$this->settings_model->get($key);
-			$modules=unserialize($settings[$key.'_module']);
+		foreach($this->extensions as $ext_key=>$ext_value):
+			$settings=$this->settings_model->get($ext_key);
+			$modules=unserialize($settings[$ext_key.'_module']);
 			if($modules)
 			{
 				foreach ($modules as $option) {
 					if ($option['layout_id'] == $layout_id && $option['position'] == $position && $option['status']) {
-						 $blocks[$option['sort_order']]=$this->$key->view($option);
+						$blocks[]=array(
+							'code'       => $ext_key,
+							'setting'    => $option,
+							'sort_order' => $option['sort_order']
+						);									
+						 //$blocks[$key][$option['sort_order']]=$this->$key->view($option);
 					}
 				}				
 			}
 		endforeach;	
-		ksort($blocks);
-		return $blocks;
+
+		
+		$sort_order = array(); 
+	  
+		foreach ($blocks as $key => $value) {
+      		$sort_order[$key] = $value['sort_order'];
+    	}
+
+		array_multisort($sort_order, SORT_ASC, $blocks);
+	
+		$block_modules=array();
+		foreach ($blocks as $module) {
+			$module = $this->$module['code']->view($module['setting']);
+			
+			if ($module) {
+				$block_modules[] = $module;
+			}
+		}		
+		return $block_modules;
 	}
+	
 	
 	protected function getLayoutBlocks($layout)
 	{
