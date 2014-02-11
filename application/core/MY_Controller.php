@@ -69,6 +69,6 @@ class Site_Controller extends CI_Controller
 include_once("Admin_Controller.php");
 include_once("Public_Controller.php");
 include_once("Member_Controller.php");
-
+include_once("API_Controller.php");
 /* End of file MY_Controller.php */
 /* Location: ./system/application/libraries/MY_Controller.php */
