@@ -94,7 +94,8 @@ class Generator extends Admin_Controller
 
 		$this->_generate_model_file($this->module_name);
 		$this->_generate_language_file($this->module_name);
-		$this->_generate_controller_file($this->module_name);		
+		$this->_generate_controller_file($this->module_name);	
+		$this->_generate_api_controller_file($this->module_name);			
 
 		$primary_key=$this->_get_primary_key();	
 		$upload_view_function='';
@@ -161,6 +162,22 @@ class Generator extends Admin_Controller
 		write_file($controller_file,$controller_data);
 		echo $controller_file . ' controller generated<br/>';			
 	}
+	
+	private function _generate_api_controller_file($file)
+	{
+
+				
+		//$primary_key=$this->_get_primary_key();		
+		$controller=ucfirst(singular($this->table_name));
+		$controller_array=array('PHP_TAG'=>'<?php','MODULE'=>$this->module_name,
+								'MODEL'=>$file."_model",'TABLE_NAME'=>$this->function_init);
+
+		$controller_data=$this->parser->parse('templates/api_controller.tpl',$controller_array,TRUE);
+		
+		$controller_file=$this->controller_directory.'api.php';
+		write_file($controller_file,$controller_data);
+		echo $controller_file . ' API controller generated<br/>';			
+	}	
 	
 	private function _create_directories()
 	{
