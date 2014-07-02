@@ -38,7 +38,7 @@
 <div iconCls="icon-file-editor" href="<?php echo site_url('tools/admin/feditor')?>"><?php echo lang('feditor_menu')?></div>
 <div iconCls="icon-filemanager" href="<?php echo site_url('tools/admin/filemanager')?>"><?php echo lang('filemanager_menu')?></div>
 <div iconCls="icon-layout" href="<?php echo site_url('layout/admin/layout')?>"><?php echo lang('layout_menu')?></div>
-<div iconCls="icon-shortcut" href="<?php echo site_url('tools/admin/generator')?>"><?php echo lang('generator_menu')?></div>
+<div iconCls="icon-shortcut" href="<?php echo site_url('tools/admin/generators')?>"><?php echo lang('generator_menu')?></div>
 <div iconCls="icon-shortcut" href="<?php echo site_url('tools/admin/shortcut')?>"><?php echo lang('shortcut_menu')?></div>
 <div iconCls="icon-shortcut" href="<?php echo site_url('tools/admin/sql')?>"><?php echo lang('sql_menu')?></div>
 </div>

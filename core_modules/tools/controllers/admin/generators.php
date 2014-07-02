@@ -1,5 +1,5 @@
 <?php
-class Generator extends Admin_Controller
+class Generators extends Admin_Controller
 {
 	var $table_name='';
 	var $prefix;
@@ -18,7 +18,7 @@ class Generator extends Admin_Controller
 	public function index()
 	{
 		$data['header']='Module Generator';
-		$data['page']= $this->config->item('template_admin') .'generator/index';
+		$data['page']= $this->config->item('template_admin') .'generators/index';
 		$data['module']='tools';
 		$tables=array();
 		$core_tables=$this->_get_core_tables();
