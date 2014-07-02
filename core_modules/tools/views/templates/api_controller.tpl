@@ -20,5 +20,11 @@ class Api extends API_Controller
     	$this->response(array('success'=>TRUE),200);
     }
     
+    public function {MODULE}_delete()
+    {
+	    //$this->post('param_name') for post method
+    	$this->response(array('success'=>TRUE),200);
+    }    
+    
     
 }
