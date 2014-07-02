@@ -64,7 +64,7 @@ function generate()
 		$.messager.alert('Error','Please Select any table');
 		return false;
 	}
-	$.ajax({url:'<?php echo site_url('tools/admin/generator/generate')?>',type:'post',data:$('#form-generator').serialize(),dataType:'html',success:function(data){
+	$.ajax({url:'<?php echo site_url('tools/admin/generators/generate')?>',type:'post',data:$('#form-generator').serialize(),dataType:'html',success:function(data){
 		$('#results').html(data);
 	}
 		
