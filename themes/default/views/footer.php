@@ -1,5 +1,5 @@
       <footer>
-        <p>&copy; Powered By <a href="http://momoengine.com" target="_blank">Momo Engine</a> <?php echo date('Y')?></p>
+        <p>&copy; Powered By <a href="http://github.com/dixanta/momoengine" target="_blank">Momo Engine</a> <?php echo date('Y')?></p>
       </footer>
 
     </div> <!-- /container -->
