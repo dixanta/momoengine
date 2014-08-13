@@ -88,8 +88,8 @@
        <div class="footer-wrap">
         
         
-        <p class="left">&copy; Copyright <?php echo date('Y')?> - Yonefu -  All rights Reserved</p><p class="right">Powered by 
-        <a href="http://yonefu.com/" target="_blank">Yonefu</a></p>
+        <p class="left">&copy; Copyright <?php echo date('Y')?> - PagodaLabs -  All rights Reserved</p><p class="right">Powered by 
+        <a href="http://pagodalabs.com/" target="_blank">PagodaLabs</a></p>
         </div>
     </div>
 </body>
