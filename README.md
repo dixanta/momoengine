@@ -11,6 +11,7 @@ Features
 5) Code Module Generating Tool straight from Database Table (Generates Controller,Model, Views,Language etc)
 6) Matchbox library for HMVC 
 7) Models multiple tables can be join on the fly
+8) Api Controllers for REST Service
 and lot more
 
 INSTALLATION
