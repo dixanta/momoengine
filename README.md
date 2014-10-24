@@ -1,7 +1,7 @@
 Momo Engine
 ==========
-Momo Engine is a CodeIgniter based Rapid Web Based Application Development Engine. To learn more about it's features visit:
-For more details please visit http://momoengine.com.
+Momo Engine is a CodeIgniter based Rapid Web Based Application Development Engine. You can freely download install and distribute your application. It has builtin code generator which allows you to generate CRUD with search Facility. You can change themes,add plugins and many more.  
+
 
 INSTALLATION
 ============
