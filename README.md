@@ -23,8 +23,7 @@ TEAM
 ===========
     Dixanta Bahadur Shrestha (Co-Founder Pagoda Labs)
     Rubim Shrestha 
-    Anup Shakya
-    Bipen Chhetri
-    Sudishna Sthapit
+    Sumit Bajracharya
+    Subash Maharjan
     Special Thanks to Adam Price for Backendpro (http://www.kaydoo.co.uk/category/backendpro)
 
