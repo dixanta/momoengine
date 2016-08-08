@@ -24,7 +24,7 @@
  */
 class Members extends Admin_Controller
 {
-	function Members()
+	function __construct()
 	{
 		parent::__construct();
 
