@@ -44,18 +44,18 @@ class Database
 	{
 		global $logger;
 
-		$this->connection = @mysql_connect($host, $user, $password);
+		$this->connection = @mysqli_connect($host, $user, $password,$database);
 		if ( ! $this->connection)
 		{
-			$logger->write('error', mysql_error());
+			$logger->write('error', mysqli_error());
 			return FALSE;
 		}
 
-		if ( ! @mysql_select_db($database, $this->connection))
+		/*if ( ! @mysql_select_db($database, $this->connection))
 		{
 			$logger->write('error', mysql_error());
 			return FALSE;
-		}
+		}*/
 
 		return TRUE;
 	}
@@ -77,9 +77,9 @@ class Database
 			return FALSE;
 		}
 
-		if( ! @mysql_query($sql, $this->connection))
+		if( ! @mysqli_query($this->connection,$sql))
 		{
-			$logger->write('error', mysql_error());
+			$logger->write('error', mysqli_error());
 			return FALSE;
 		}
 
