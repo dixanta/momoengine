@@ -46,7 +46,7 @@ class Widget
 	 * @param string $body Body contents of widget
 	 * @return boolean
 	 */
-	function widget($name = NULL, $body = NULL)
+	function __construct($name = NULL, $body = NULL)
 	{
 		$this->CI = get_instance();
 		if( is_null($name))

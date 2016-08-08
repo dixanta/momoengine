@@ -34,7 +34,7 @@ class Dashboard
 	 */
 	var $widgets = array();
 
-	function Dashboard()
+	function __construct()
 	{
 		$this->CI =& get_instance();
 
