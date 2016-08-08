@@ -66,7 +66,7 @@ function ckeditor($obj,$config=array())
             filebrowserImageBrowseUrl :CKEDITOR.basePath +'plugins/filemanager/index.html?type=Images',
             filebrowserFlashBrowseUrl : CKEDITOR.basePath +'plugins/filemanager/index.html?Type=Flash',
 			};
-            <?
+            <?php
 				if(!empty($config))
 				{
 					echo 'config='.json_encode($config).';';		
@@ -83,7 +83,7 @@ function tinymce($obj,$config=array())
 			script_url : '<?=base_url()?>assets/js/tinymce/tiny_mce.js',
             mode: 'exact',
             skin : "o2k7",
-            <? if(empty($config['theme'])){
+            <?php if(empty($config['theme'])){
 				echo "theme : 'advanced',";
 			}
 			?>

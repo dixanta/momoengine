@@ -16,5 +16,5 @@ $(document).ready(function()
 <body class="easyui-layout" style="display:none" fit="true">
 <div region="north"  border="false">
     <?php print displayStatus();?>
-<? print $this->load->view($this->config->item('template_admin') . 'menu');?>
+<?php print $this->load->view($this->config->item('template_admin') . 'menu');?>
 </div>
