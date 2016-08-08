@@ -993,3 +993,38 @@ INFO  - 2016-08-08 15:06:14 --> Connect to database Component installed
 INFO  - 2016-08-08 15:06:16 --> Update table schema Component installed
 INFO  - 2016-08-08 15:06:16 --> Create administrator user account Component installed
 INFO  - 2016-08-08 15:06:16 --> Setup Database Feature installed
+INFO  - 2016-08-08 15:14:06 --> Base path set to: C:/xampp/htdocs/momo/momoengine/
+INFO  - 2016-08-08 15:14:06 --> Base dir set to: /momo/momoengine/
+INFO  - 2016-08-08 15:14:06 --> System path set to: C:/xampp/htdocs/momo/momoengine/system/
+INFO  - 2016-08-08 15:14:06 --> Application path set to: C:/xampp/htdocs/momo/momoengine/application/
+INFO  - 2016-08-08 15:14:06 --> Modules path set to: C:/xampp/htdocs/momo/momoengine/core_modules/
+INFO  - 2016-08-08 15:14:06 --> Logs path set to: C:/xampp/htdocs/momo/momoengine/application/logs/
+INFO  - 2016-08-08 15:14:06 --> Cache path set to: C:/xampp/htdocs/momo/momoengine/application/cache/
+INFO  - 2016-08-08 15:14:06 --> New feature 'FileSystem Check' created
+INFO  - 2016-08-08 15:14:06 --> New feature 'Setup FileSystem' created
+INFO  - 2016-08-08 15:14:06 --> New feature 'Setup Database' created
+INFO  - 2016-08-08 15:14:06 --> Feature 'Setup FileSystem' now has prerequisite 'FileSystem Check'
+INFO  - 2016-08-08 15:14:06 --> Feature 'Setup Database' now has prerequisite 'Setup FileSystem'
+INFO  - 2016-08-08 15:14:06 --> Component 'Log Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2016-08-08 15:14:06 --> Component 'Asset folders writable' attached to feature 'FileSystem Check'
+INFO  - 2016-08-08 15:14:06 --> Component 'Cache Folder writable' attached to feature 'FileSystem Check'
+INFO  - 2016-08-08 15:14:06 --> Component 'Config files writable' attached to feature 'FileSystem Check'
+INFO  - 2016-08-08 15:14:06 --> Component 'Create new system config file' attached to feature 'Setup FileSystem'
+INFO  - 2016-08-08 15:14:06 --> Component 'Create new database config file' attached to feature 'Setup FileSystem'
+INFO  - 2016-08-08 15:14:06 --> Component 'Create new ReCAPTCHA config file' attached to feature 'Setup FileSystem'
+INFO  - 2016-08-08 15:14:06 --> Component 'Connect to database' attached to feature 'Setup Database'
+INFO  - 2016-08-08 15:14:06 --> Component 'Update table schema' attached to feature 'Setup Database'
+INFO  - 2016-08-08 15:14:06 --> Component 'Create administrator user account' attached to feature 'Setup Database'
+INFO  - 2016-08-08 15:14:06 --> Log Folder writable Component installed
+INFO  - 2016-08-08 15:14:06 --> Asset folders writable Component installed
+INFO  - 2016-08-08 15:14:06 --> Cache Folder writable Component installed
+INFO  - 2016-08-08 15:14:06 --> Config files writable Component installed
+INFO  - 2016-08-08 15:14:06 --> FileSystem Check Feature installed
+INFO  - 2016-08-08 15:14:06 --> Create new system config file Component installed
+INFO  - 2016-08-08 15:14:06 --> Create new database config file Component installed
+INFO  - 2016-08-08 15:14:06 --> Create new ReCAPTCHA config file Component installed
+INFO  - 2016-08-08 15:14:06 --> Setup FileSystem Feature installed
+INFO  - 2016-08-08 15:14:06 --> Connect to database Component installed
+INFO  - 2016-08-08 15:14:08 --> Update table schema Component installed
+INFO  - 2016-08-08 15:14:08 --> Create administrator user account Component installed
+INFO  - 2016-08-08 15:14:08 --> Setup Database Feature installed
