@@ -146,6 +146,7 @@ class Auth_form_processing
 		// See if a user exists with the given credentials
 		$result = $this->CI->user_model->validateLogin($values['login_field'],$values['password']);
 		
+		
 		if ( $result['valid'] )
 		{
 			// We we have a valid user
