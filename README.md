@@ -21,9 +21,7 @@ Next, follow the directions on the screen.
 
 TEAM
 ===========
-    Dixanta Bahadur Shrestha (Co-Founder Pagoda Labs)
+    Dixanta Bahadur Shrestha (CEO @ Leapfrog Academy)
     Rubim Shrestha 
-    Sumit Bajracharya
-    Subash Maharjan
     Special Thanks to Adam Price for Backendpro (http://www.kaydoo.co.uk/category/backendpro)
 
