@@ -21,6 +21,6 @@ Next, follow the directions on the screen.
 
 TEAM
 ===========
-    Dixanta Bahadur Shrestha (CEO @ Leapfrog Academy)
+    Dixanta Bahadur Shrestha (Owner @ Creators Institute of Business & Technology)
     Special Thanks to Adam Price for Backendpro (http://www.kaydoo.co.uk/category/backendpro)
 
